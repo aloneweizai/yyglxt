@@ -1,0 +1,679 @@
+
+
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="description" content="${siteInfo.description}"/>
+			<meta name="keywords" content="${siteInfo.keywords}"/>
+			<title>ABC财税网</title>
+
+			<meta http-equiv="x-dns-prefetch-control" content="on" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+			<link type="text/css" rel="stylesheet"  href="/css/webpage_main-480.css"/>
+
+			<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+			<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+			<link rel="stylesheet" type="text/css" href="/css/public.css">
+			<link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:1200px)" href="/css/webpage_main-1024.css"/>
+			<link type="text/css" rel="stylesheet" media="screen and (min-width:1201px)" href="/css/webpage_main.css"/>
+			<!--[if IE 8]>
+				<link type="text/css" rel="stylesheet"  href="/css/webpage_main-1024.css"/>
+			<![endif]-->
+
+
+
+			<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="/js/bootstrap.js" ></script>
+			<script type="text/javascript" src="/js/jquery.base64.min.js" ></script>
+
+
+			<script type="text/javascript" src="/js/webpage_main.js"></script>
+			<script type="text/javascript">
+				var snsUrl = "${snsUrl}";
+				var ucUrl = "${ucUrl}";
+				var picUrl= "${picUrl}";
+				var cswUrl = "${cswUrl}";
+			</script>
+			<script type="text/javascript" src="/js/home_index.js"></script>
+			<script type="text/javascript" src="/js/header.js"></script>
+			<script type="text/javascript" src="/js/services.js"></script>
+			${siteInfo.statisticsCode}
+
+			<style>
+				.ny_login_nav2 {
+					float: left;
+					color: #fff;
+				}
+				.ny_login_nav2 img{
+					height:40px;
+					width:40px;
+					border-radius:40px;
+					margin:7px;
+					float: left;
+				}
+				.ny_login_nav2 .user_name{
+					float: left;
+				}
+				.ny_login_nav2 .user_name p{
+					line-height:10px;
+					margin-top:12px;
+				}
+				.ny_login_nav2 .user_name a{
+
+				}
+			</style>
+
+		</head>
+
+		<body style="background: #ececec;" >
+		<!-- head -->
+		<div id="header">
+			<div class='ny_head'>
+				<div class='w_1200'>
+					<div class='ny_logo'>
+						<a href='${cswUrl}/index.html' title='网站首页'>
+							<div class='boximg'><span><img src='${cswUrl}/images/logo.png'></span></div>
+						</a>
+					</div>
+
+					<div class='ny-480-nav'>
+						<div class='ny-480-sg'>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<ul>
+							<li class='active'><a href='${cswUrl}/index.html'>首页</a></li>
+							<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+							<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+							<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+							<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+							<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+							<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+							<div class='clear'></div>
+						</ul>
+						<div class='ny-480-bg'></div>
+					</div>
+
+					<div class='fr'>
+						<div class='ny_nav'>
+							<ul>
+								<li><a href='${cswUrl}/index.html'>首页</a></li>
+								<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+								<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+								<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+								<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+								<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+								<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+								<div class='clear'></div>
+							</ul>
+						</div>
+						<div class="ny_login_serach">
+							<a href="${snsUrl}/search/index.html" target="_blank"><i class="iconfont">&#xe83b;</i>搜索</a>
+							<a href="javascript:void(0);" id="tiwen"><i class="iconfont">&#xe7c0;</i>提问</a>
+						</div>
+						<div id="loginheaddiv" class="ny_login_nav">
+							<a href="${ucUrl}/login">登录</a>|
+							<a href="${ucUrl}/login#zhuce">注册</a>
+						</div>
+
+						<div id="loginheaddiv_loged" class="ny_login_nav2" style="display:none;">
+							<img id="userpic_img" src="${cswUrl}/images/icon_zx_03.png">
+							<div class="user_name">
+								<p><a id="nickname_a" style="color: #fff; font-size: 12px;" href="${ucUrl}/index.html"></a></p>
+								<a id="vip_a" href="javascript:void (0)" style="color: #fcff00; font-size: 12px;"></a>
+							</div>
+							<div class="nemu-box">
+								<div class="center"><a id="level_a" href="javascript:void (0)"></a></div>
+								<ul><li name="${ucUrl}/index.html" link="${ucUrl}/userinfo/userinfolist.html" onclick="jbzl()"> <a href="javascript:void(0);"><i class="iconfont"> </i><span>基本资料</span></a></li>
+									<li name="${ucUrl}/index.html?#1_1" link="${ucUrl}/userinfo/userinfolist.html?#1_1" onclick="smrzClick()">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>实名认证</span></a>
+									</li>
+									<li name="${ucUrl}/userinfo/user_message.html" link="${ucUrl}/userinfo/user_message.html" onclick="wdxx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>我的消息</span></a>
+									</li>
+									<li name="${ucUrl}/member/member_index.html" link="${ucUrl}/member/member_index.html" onclick="hyzx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>会员中心</span></a>
+									</li>
+									<li class="tuichu"><a href="${ucUrl}/logout_index.html"><i class="iconfont"> </i><span>退出登录</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='clear'></div>
+
+		</div>
+
+		<!-- head end -->
+		<!-- main -->
+		<div class="xutang_maximg">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<#if adPageList?? && (adPageList?size>0)>
+						<#list adPageList as adPage>
+							<#if adPage_index==0>
+								<li data-target="#carousel-example-generic" data-slide-to="${adPage_index}" class="active"></li>
+							<#else>
+								<li data-target="#carousel-example-generic" data-slide-to="${adPage_index}"></li>
+							</#if>
+						</#list>
+					</#if>
+				</ol>
+				<!-- Wrapper for slides -->
+								<div class="Carousel">
+									<div class="carousel-inner" role="listbox">
+										<#if adPageList?? && (adPageList?size>0)>
+											<#list adPageList as adPage>
+
+													<#if adPage.link?? && adPage.link?length gt 0>
+														<#if adPage_index==0>
+															<div class="item active" style="background:${adPage.style!};">
+														<#else>
+															<div class="item" style="background:${adPage.style!};">
+														</#if>
+															<div class="carousel-caption">
+																<a href="${adPage.link!}" target="_blank"><img src="${picUrl}/images/${adPage.url!}" alt=""></a>
+															</div>
+														</div>
+														<#else>
+															<#if adPage_index==0>
+																<div class="item active" style="background:${adPage.style!};">
+															<#else>
+																<div class="item" style="background:${adPage.style!};">
+															</#if>
+																	<div class="carousel-caption">
+																		<img src="${picUrl}/images/${adPage.url!}" alt="">
+																	</div>
+																</div>
+													</#if>
+
+											</#list>
+										<#else>
+											<div class="item active" style="background: rgb(7, 36, 78);">
+												<div class="carousel-caption">
+													<img src="/images/1.png" alt="">
+												</div>
+											</div>
+										</#if>
+
+									</div>
+									<div class="Carousel-advert-father">
+										<div class="Carousel-advert">
+											<p>通知公告</p>
+											<ul id="tzgg_ul">
+												<#if noticesList?? && noticesList?size gt 0>
+													<#list noticesList as notice>
+														<#if notice_index == 6>
+															<#break>
+														</#if>
+														 <a href='${snsUrl}/help/notice/detail.html?id=${notice.id!}' target='_blank'><li class="danhang">${notice.title!}</li></a>
+													</#list>
+												</#if>
+											</ul>
+										</div>
+									</div>
+								</div>
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<i class="iconfont">&#xe700;</i>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<i class="iconfont">&#xe702;</i>
+						</a>
+		</div>
+		</div>
+		<div class="main-ul">
+			<ul class="clearfix">
+				<li class="clearfix">
+					<a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">
+						<div class="main-ul-left" style="background: #00BCD4;">
+							<i class="iconfont">&#xe71d;</i>
+						</div>
+						<div class="main-ul-right" >
+							<p>财税专家</p>
+							<span>让财税业务如影随行!</span>
+						</div>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">
+						<div class="main-ul-left" style="background:#61cdfe;">
+							<i class="iconfont">&#xe624;</i>
+						</div>
+						<div class="main-ul-right">
+							<p>电子申报</p>
+							<span>让申报更简单！</span>
+						</div>
+					</a>
+				</li>
+				<li class="clearfix">
+					<a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">
+						<div class="main-ul-left" style="background:#44caa7;">
+							<i class="iconfont">&#xe78c;</i>
+						</div>
+						<div class="main-ul-right">
+							<p>电子税局</p>
+							<span>让办税更方便！</span>
+						</div>
+					</a>
+				</li>
+				<li class="clearfix">
+					<div class="main-ul-left" style="background:#FCBC5A;">
+						<i class="iconfont">&#xe6fc;</i>
+					</div>
+					<div class="main-ul-right">
+						<p>汇算清缴</p>
+						<span>让财税更方便！</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="w_1200 middle">
+			<div class="middle-left clearfix ">
+				<div class="dynamic" >
+					<p class="dynamic-p"><s></s>热门推荐<span><a href="${cswUrl}/news/index.html" target="_blank">更多+</a></span></p>
+					<ul>
+						<@contentFromChannel access_token=accessToken admin_token=userToken ps = 7 page=1 channelId ='0f55xhd' typeId='4'>
+						<#list contentListResponse.dataList as contentDto>
+
+							<li class="clearfix">
+								<#if (contentDto.titleImg?? && contentDto.titleImg?length gt 0)>
+									<div class="dynamic-left-li">
+										<img src="${contentDto.titleImg!}" alt="">
+									</div>
+								</#if>
+								<div class="dynamic-right-li">
+									<h4><a href="${cswUrl}${contentDto.staticLink!}" target="_blank"><#if contentDto.title?length gt 30>${contentDto.title[0..30]}…<#else>${contentDto.title!}</#if></a></h4>
+									<p class="dynamic-right-li-hello sanhang">
+										<span>
+											<#if (contentDto.shortTitle?length>150)>
+												${contentDto.shortTitle?substring(0,150)}……
+												<#else>
+													${contentDto.shortTitle}
+											</#if>
+										</span>
+									</p>
+									<p class="dynamic-right-li-word clearfix"><span>作者：${contentDto.author!}<s>${(contentDto.releaseDate?string("yyyy-MM-dd"))!}</s></span><span>
+											<#if contentDto.contentType?? && contentDto.contentType?length gt 0>
+
+												<#assign labels = contentDto.contentType?split(";")>
+													<#if contentLabelList.dataList?? && contentLabelList.dataList?size gt 0>
+														<i class="iconfont">&#xe78d;</i>
+														<#assign lableList = contentLabelList.dataList>
+															<#list labels as label>
+																<#list lableList as contentLable>
+																	<#if label == contentLable.tagId>
+																		<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank"><u>${contentLable.tagName}</u></a>
+																	</#if>
+																</#list>
+															</#list>
+													</#if>
+
+											</#if>
+										</span></p>
+								</div>
+							</li>
+						</#list>
+
+						</@contentFromChannel>
+
+
+					</ul>
+				</div>
+				<div class="hot">
+					<div class="csw-index-img">
+						<a id="home_fwxf_pic" href="http://pay.abc12366.cn" onmouseover="getFwxfUrl_home_pic()" target="_blank"><img src="/images/csw-fwxf.jpg" alt=""></a>
+					</div>
+					<div id="huodongDiv" class="help-activity-right-top clearfix">
+						<img src="/images/bb2_10.png" class="help-activity-right-firstimg">
+
+						<div class="firstimg-bg">
+							<p class="duohang"></p>
+							<span><i class="iconfont">&#xe7f7;</i>10-29 14:00</span>
+							<a href="">我要报名</a>
+						</div>
+					</div>
+					<div class="hot-top">
+						<p class="dynamic-p"><s></s>热点问题</p>
+						<ul id="rdwt_ul">
+							<!--<#if hotQAList?? && hotQAList?size gt 0>-->
+								<#list hotQAList as hotQA>
+									<#if hotQA_index == 8>
+										<#break>
+									</#if>
+									<li><a href='${snsUrl}/help/knowledge/detail.html?id=${hotQA.id!}' target='_blank'><i class='iconfont'>&#xe739;</i><#if hotQA.subject?length gt 23>${hotQA.subject[0..23]}<#else>${hotQA.subject!}</#if></a></li>
+								</#list>
+							<!--</#if>-->
+							
+						</ul>
+					</div>
+					<!-- 帮友热议 -->
+					<div class="hot-down">
+						<p class="dynamic-p"><s></s>帮友热议</p>
+						<img src="images/demohot-2.png" alt="">
+						<ul id="byry_ul">
+							<li><u style="background:#FF3B35;">1</u></li>
+							<li><u style="background:#FC7D30;">2</u></li>
+							<li><u style="background:#FCBF30;">3</u></li>
+							<li><u>4</u></li>
+							<li><u>5</u></li>
+							<li><u>6</u></li>
+							<li><u>7</u></li>
+							<li><u>8</u></li>
+							<li><u>9</u></li>
+							<li><u>10</u></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 中心图片上面 -->
+			<div class="content-img">
+				<img src="/images/content-img.png" alt="">
+			</div>
+			<div class="newest">
+				<p class="dynamic-p"><s></s>最新课程<span><a href="${snsUrl}/school/index.html" target="_blank">更多+</a></span></p>
+				<ul class="clearfix" id="zxkc_ul">
+					<#if curriculumnList?? && curriculumnList?size gt 0>
+						<#list curriculumnList as curriculumn>
+							<#if curriculumn_index == 6>
+								<#break>
+							</#if>
+							<li class="clearfix">
+								<a href='${snsUrl}/school/details/${curriculumn.curriculumId!}?page=1' target='_blank'>
+									<div class="newest-li-left">
+										<img src="${picUrl}${curriculumn.cover}" alt="">
+									</div>
+									<div class="newest-li-right">
+										<p class="newest-li-right-p"><#if curriculumn.title?length gt 10>${curriculumn.title[0..10]}…<#else>${curriculumn.title!}</#if></p>
+
+										<p>
+										<span>
+											<i class="iconfont">&#xe735;</i>
+											<s>${curriculumn.coursewareNum!}</s>课时
+										</span>
+										<span>
+											<i class="iconfont">&#xe713;</i>
+											<s>${curriculumn.watchNum!}</s>次学习
+										</span>
+										</p>
+										<p>
+											${(curriculumn.isFree==0)?string("<s style='color:#f29941'>会员免费</s>","<s>免费</s>")}
+										</p>
+									</div>
+								</a>
+							</li>
+						</#list>
+					</#if>
+
+					
+				</ul>
+			</div>
+			<div class="Politics clearfix">
+				<div class="Politics-left">
+					<p class="dynamic-p"><s></s>政策法规<span><a href="${cswUrl}${multiSecColMap['政策法规'].channelPath}/index_${multiSecColMap['政策法规'].channelId}_0.html" target="_blank">更多+</a></span></p>
+					<ul>
+						<#list multiSecColContentListMap['政策法规'] as contentDto>
+							<#if contentDto_index == 10>
+								<#break>
+							</#if>
+							<li><i class="iconfont">&#xe739;</i><a href="${cswUrl}${contentDto.staticLink}" target="_blank">${contentDto.title!}</a><span>${(contentDto.releaseDate?string("yyyy-MM-dd"))!}</span></li>
+						</#list>
+
+					</ul>
+				</div>
+				<div class="Politics-right">
+					<p class="dynamic-p"><s></s>热点知识</p>
+					<ul id="rdzs_ul">
+						<#if hotKList?? && hotKList?size gt 0>
+							<#list hotKList as hotK>
+								<#if hotK_index == 8>
+									<#break>
+								</#if>
+								<li><a href='${snsUrl}/help/knowledge/detail.html?id=${hotK.id!}' target='_blank'><i class='iconfont'>&#xe739;</i><#if hotK.subject?length gt 23>${hotK.subject[0..23]}<#else>${hotK.subject!}</#if></a></li>
+							</#list>
+						</#if>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="content-img02">
+				<img src="/images/content-img02.png" alt="">
+			</div>
+			<div class="stipulate">
+				<div class="dynamic-p">
+					<s></s>财税资讯
+					<ul id="tabs_ul" class="stipulate-ul-top clearfix">
+						<li class="active" abc-visiturl="${cswUrl}${multiSecColMap['财税实务'].channelPath}/index_${multiSecColMap['财税实务'].channelId}_0.html">财税实务</li>
+						<li abc-visiturl="${cswUrl}${multiSecColMap['案例分析'].channelPath}/index_${multiSecColMap['案例分析'].channelId}_0.html">案例分析</li>
+						<li abc-visiturl="${cswUrl}${multiSecColMap['财税专题'].channelPath}/index_${multiSecColMap['财税专题'].channelId}_0.html">财税专题</li>
+					</ul>
+					<span id="cszx_span"><a href="javascript:void(0);">更多+</a></span>
+				</div>
+				<ul class="stipulate-ul-bottom stipulate-ul-bottom-one" >
+
+					<#list multiSecColContentListMap['财税实务'] as contentDto>
+						<#if contentDto_index == 5>
+							<#break>
+						</#if>
+						<li class="clearfix">
+
+									<div class="dynamic-right-li">
+										<#if (contentDto.titleImg?? && contentDto.titleImg?length gt 0)>
+											<img src="${contentDto.titleImg!}" class="fl clearfix" alt="">
+										</#if>
+										<h4><a href="${cswUrl}${contentDto.staticLink}" target="_blank">${contentDto.title!}</a></h4>
+										<p class="dynamic-right-li-hello sanhang">
+									<span>
+											${contentDto.shortTitle!}
+									</span>
+										</p>
+										<p class="dynamic-right-li-word clearfix"><span>作者：${contentDto.author!}<s>${(contentDto.releaseDate?string("yyyy-MM-dd"))!}</s></span><span>
+											<#if contentDto.contentType?? && contentDto.contentType?length gt 0>
+
+												<#assign labels = contentDto.contentType?split(";")>
+													<#if contentLabelList.dataList?? && contentLabelList.dataList?size gt 0>
+														<i class="iconfont">&#xe78d;</i>
+														<#assign lableList = contentLabelList.dataList>
+															<#list labels as label>
+																<#list lableList as contentLable>
+																	<#if label == contentLable.tagId>
+																		<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank"><u>${contentLable.tagName}</u></a>
+																	</#if>
+																</#list>
+															</#list>
+													</#if>
+
+											</#if></span></p>
+							</div>
+						</li>
+					</#list>
+
+				</ul>
+
+
+				<ul class="stipulate-ul-bottom stipulate-ul-bottom-two">
+					<#list multiSecColContentListMap['案例分析'] as contentDto>
+						<#if contentDto_index == 5>
+							<#break>
+						</#if>
+						<li class="clearfix">
+							<div class="dynamic-right-li">
+								<#if (contentDto.titleImg?? && contentDto.titleImg?length gt 0)>
+									<img src="${contentDto.titleImg!}" class="fl clearfix" alt="">
+								</#if>
+								<h4><a href="${cswUrl}${contentDto.staticLink}" target="_blank">${contentDto.title!}</a></h4>
+								<p class="dynamic-right-li-hello sanhang">
+											${contentDto.shortTitle}
+								</p>
+								<p class="dynamic-right-li-word clearfix"><span>作者：${contentDto.author!}<s>${(contentDto.releaseDate?string("yyyy-MM-dd"))!}</s></span><span>
+												<#if contentDto.contentType?? && contentDto.contentType?length gt 0>
+
+													<#assign labels = contentDto.contentType?split(";")>
+														<#if contentLabelList.dataList?? && contentLabelList.dataList?size gt 0>
+															<i class="iconfont">&#xe78d;</i>
+															<#assign lableList = contentLabelList.dataList>
+																<#list labels as label>
+																	<#list lableList as contentLable>
+																		<#if label == contentLable.tagId>
+																			<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank"><u>${contentLable.tagName}</u></a>
+																		</#if>
+																	</#list>
+																</#list>
+														</#if>
+
+												</#if></span></p>
+							</div>
+						</li>
+					</#list>
+
+				</ul>
+
+
+				<ul class="stipulate-ul-bottom stipulate-ul-bottom-three">
+					<#list multiSecColContentListMap['财税专题'] as contentDto>
+						<#if contentDto_index == 5>
+							<#break>
+						</#if>
+						<li class="clearfix">
+							<div class="dynamic-right-li">
+								<#if (contentDto.titleImg?? && contentDto.titleImg?length gt 0)>
+									<img src="${contentDto.titleImg!}" class="fl clearfix" alt="">
+								</#if>
+								<h4><a href="${cswUrl}${contentDto.staticLink}" target="_blank">${contentDto.title!}</a></h4>
+								<p class="dynamic-right-li-hello sanhang">
+									${contentDto.shortTitle}
+								</p>
+								<p class="dynamic-right-li-word clearfix"><span>作者：${contentDto.author!}<s>${(contentDto.releaseDate?string("yyyy-MM-dd"))!}</s></span><span>
+												<#if contentDto.contentType?? && contentDto.contentType?length gt 0>
+													<#assign labels = contentDto.contentType?split(";")>
+														<#if contentLabelList.dataList?? && contentLabelList.dataList?size gt 0>
+															<i class="iconfont">&#xe78d;</i>
+															<#assign lableList = contentLabelList.dataList>
+																<#list labels as label>
+																	<#list lableList as contentLable>
+																		<#if label == contentLable.tagId>
+																			<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank"><u>${contentLable.tagName}</u></a>
+																		</#if>
+																	</#list>
+																</#list>
+														</#if>
+
+												</#if></span></p>
+							</div>
+						</li>
+					</#list>
+				</ul>
+			</div>
+		</div>
+		<!-- main end -->
+		<!-- footer  -->
+		<div class="footer">
+			<div class="w_1200">
+				<ul class="footer_nav">
+					<li>
+						<h3><a href="${cswUrl}/aboutus/fc5d52f799ba4f9fa6968c9105015d4d.html" target="_blank">关于我们</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/aboutus/62f19008a49a4008912e7ab64c75a945.html" target="_blank">联系我们</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/16241b879f4248bda857688c13ae9fd7.html" target="_blank">版权声明</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/09e1eda03bc04a92b5a891fa16d8301d.html" target="_blank">隐私政策</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/e8ee90183ece4ffaaf1c1d3e62555feb.html" target="_blank">商务合作</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/products/index.html" target="_blank">产品</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">ABC财税专家</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">ABC电子申报</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">电子税局</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/11e6ae0f2fea42b695e406299ce9f6fa.html" target="_blank">税务公众号</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/services/index.html" target="_blank">服务</a></h3>
+						<dl>
+							<dd>
+								<a href="javascript:void(0);" onclick="sbfwxfClick();">申报服务续费</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="wjmmClick();">忘记申报密码</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="sqfpClick();">索取发票</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="jfczClick();">帐户充值</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${snsUrl}/help/knowledge/index.html" target="_blank">帮助中心</a></h3>
+						<dl>
+							<dd>
+								<a href="${ucUrl}/login#zhuce" target="_blank">用户注册</a>
+							</dd>
+							<dd>
+								<a href="${ucUrl}/forgotpassword.html" target="_blank">找回密码</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/index.html" target="_blank">常见问题</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b" target="_blank">新手指南</a>
+							</dd>
+						</dl>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="footer_link">
+					<h3><a href="">友情链接</a></h3>
+					<ul>
+						<#if links?? && links?size gt 0>
+							<#list links as link>
+								<li>
+									<a href="${link.domain!}" target="_blank">${link.siteName!}</a>
+								</li>
+							</#list>
+						</#if>
+
+
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="footer_code"><img src="/images/code.jpg">微信关注我们</div>
+				<div class="clear"></div>
+			</div>
+			<div class="foot w_1200">
+				<div class="fl">Copyright © 2005-2015 ABC12366 All Rights Reserved 粤ICP备08111004号-3
+					<script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=4a80c3b8-1619-4ffa-ae2e-16c54df84596&width=70&height=22&type=2" type="text/javascript" charset="utf-8"></script></div>
+				<div class="fr">
+					<div class="yuan bg_blue fl">T</div>400-887-3133</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- footer end -->
+
+		</body>
+
+		</html>

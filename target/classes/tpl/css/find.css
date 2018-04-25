@@ -1,0 +1,630 @@
+.Light-blue{background-color: #14B9D5}
+.blue{background-color: #18d0af}
+.yellow{background-color: #f29941}
+.red{background-color: #Ff7373}
+.Dark-blue{background-color: #339fea}
+blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-weight: normal;
+
+}
+dfn,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    line-height: 24px;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+}
+li{
+    font-style: normal;
+    list-style-type: none;
+}
+#find-box{
+    width: 1200px;
+    margin:30px auto 0 auto;
+    padding: 20px 15px;
+    /*background-color: #9F9F9F;*/
+}
+#find-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.School-box .nav ul li:nth-last-child(1){
+    float: right;
+}
+.nav h3{
+    font-size: 20px;
+    padding-left: 6px;
+    border-left: 5px solid #14b9d5;
+    float: left;
+    margin-right: 10px;
+}
+.nav ul{
+    margin-left: 24px;
+    margin-bottom: 12px;
+    padding-top: 6px;
+    height: 28px;
+}
+.nav ul:after{
+    content: '';
+    clear: both;
+    display: block;
+
+}
+.nav ul li{
+    margin-left: 16px;
+    float: left;
+    position: relative;
+    width: 58px;
+    height: 24px;
+}
+.nav ul li a{
+    color: #676767;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.nav ul li:before{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #1bbdd9;
+    float: right;
+}
+.nav ul li a:after{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+}
+.nav ul li:hover:before,
+.nav ul li a:hover:after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #1bbdd9;
+}
+.course-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.course-box .course{
+    background: #fff;
+    height: 204px;
+}
+.course-box .course1{
+    height: 423px;
+}
+.course-box .course .Introduction{
+    background-color: #fff;
+    padding: 13px;
+}
+.course-box .course .Introduction p{
+    color: #9c9c9c;
+    margin: 16px 0 18px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.course-box .course:hover{
+    box-shadow: 0 4px 20px #9F9F9F;
+}
+
+.course-box .course dfn span{
+    color: #989898;
+}
+.course-box .course dfn em{
+    font-size: 16px;
+    float: right;
+}
+.course-box .course dfn{
+    margin-top: 16px;
+}
+.course-box .course{
+    width: 240px;
+    float: left;
+    margin-left: 17px;
+}
+.course-box .course dfn em{
+    color: #ff8803;
+    font-size: 14px;
+    float: right;
+}
+.course-box .course .img{
+    width: 240px;
+    height: 130px;
+    overflow: hidden;
+}
+.course-box .course .img img{
+   width: 240px;
+    height: 130px;
+    transition:All 0.6s ease-in-out;
+    -webkit-transition:All 0.6s ease-in-out;
+    -moz-transition:All 0.6s ease-in-out;
+    -o-transition:All 0.6s ease-in-out;
+}
+.course-box .course h3{
+    font-size: 14px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.course-box .course1 .img{
+    width: 428px;
+    height: 304px;
+    overflow: hidden;
+}
+.course-box .course1 .img img{
+    width: 428px;
+    height: 304px;
+    transition:All 0.6s ease-in-out;
+    -webkit-transition:All 0.6s ease-in-out;
+    -moz-transition:All 0.6s ease-in-out;
+    -o-transition:All 0.6s ease-in-out;
+}
+.course-box .course:hover img{
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+.course-box .course:nth-child(5),
+.course-box .course:nth-child(6),
+.course-box .course:nth-child(7){
+     margin-top: 15px;
+}
+
+.course-box .course1{
+    width: 428px;
+}
+
+.course-box .course1 h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.course-box .course1{
+    margin-left: 0;
+}
+.course-box .course1 .Introduction{
+    background-color: #fff;
+    padding: 28px 16px;
+}
+.course-box .course1 dfn span,
+.course-box .course1 dfn em{
+    font-size: 16px;
+}
+
+/*财税咨询*/
+.Taxation-box{
+    margin-top: 40px;
+}
+.Headlines-box{
+    background: #fff;
+    padding: 20px;
+}
+.Headlines-box:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.Headlines{
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+}
+.Taxation-box .Headlines-box:nth-last-child(2) .Headlines{
+    border-bottom: none;
+}
+.Headlines:hover{
+    box-shadow: 0 4px 20px #d1d1d1;
+    transform: translate(6px,3px);
+}
+.Headlines .img:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.Headlines .img{
+    float: left;
+    margin-right: 16px;
+}
+.Headlines .img img{
+    width: 210px ;
+    height: 130px;
+}
+.Headlines:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.Headlines .content h4{
+    font-size: 18px;
+    margin-top: -4px;
+    color: #333333;
+}
+.Headlines .content p{
+    color: #989898;
+    margin-top: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: 74px;
+}
+.Headlines .content .tim{
+    color: #989898;
+    width: 900px;
+}
+.Headlines .content .tim dfn{
+    float: right;
+}
+.Headlines .content .tim dfn i{
+    font-weight: normal;
+    font-size: 20px;
+}
+.Headlines .content .tim dfn span{
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 6px;
+    background: #c9c9c9;
+    color: #fff;
+    margin-left: 10px;
+}
+/*财税帮邦*/
+/*lefe*/
+#bangbang-box{
+    margin-top: 40px;
+}
+#bangbang-box:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#bangbang-box .nav ul li:nth-last-child(1){
+    float: right;
+}
+#bangbang-box .nav{
+    width: 780px;
+}
+.problem:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.problem{
+    padding-bottom: 20px;
+}
+.article-box,
+.problem-box {
+    padding: 20px;
+    width: 746px;
+    background: #fff;
+    float: left;
+}
+.article-box h3,
+.dynamic h3,
+.problem-box h3{
+    font-size: 18px;
+    color: #1ab7da;
+    margin-bottom: 16px;
+}
+.problem .img{
+    float: left;
+}
+.problem .img img{
+    width: 46px;
+    height: 46px;
+    border: 2px solid #1ab7da;
+    border-radius: 100%;
+}
+.problem .centent{
+    float: left;
+    width: 642px;
+    margin-left: 16px;
+}
+.problem .centent h4{
+    font-size: 16px;
+    color: #333333;
+}
+.problem .centent .time{
+    margin: 8px 0 14px 0;
+}
+.problem .centent .time .name{
+    color: #74243d;
+    margin-right: 20px;
+}
+.problem .centent .time .date{
+    color: #5f6972;
+}
+.problem .centent p{
+    color: #989898;    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 42px;
+    padding-top: 6px;
+
+}
+
+/*right*/
+.dynamic{
+    width: 360px;
+    float: right;
+    padding: 20px;
+    background-color: #fff;
+    height: 560px;
+}
+.Event-Details{
+    background-color: #f7f7f7;
+    padding: 20px 20px 40px 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.Event-Details .Triangle{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+.Event-Details:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.Event-Details .img:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.Event-Details li{
+    line-height: 30px;
+    color: #989898;
+}
+.Event-Details .img{
+    margin-bottom: 12px;
+}
+.Event-Details .img img{
+    float: left;
+    margin-right: 10px;
+
+}
+.Event-Details .img h4{
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 21px;
+}
+.Event-Details ul li i{
+    margin-right: 6px;
+}
+.Event-Details .sign{
+    margin-top:20px;
+}
+.Event-Details .sign .Organizer img{
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+}
+.Event-Details .sign .Organizer span{
+    padding-top: 4px;
+    display: block;
+}
+.Event-Details .sign .Organizer p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #46b9e6;
+}
+.Event-Details .sign .btn{
+    float: right;
+    margin-top: 20px;
+}
+.Event-Details .sign .btn a{
+    display: block;
+    width: 98px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #f28300;
+    border-radius: 4px;
+}
+.Event-Details .sign .btn a:hover{
+    opacity: 0.8;
+}
+/*优秀帮派*/
+.Ranking-box{
+    background-color: #f7f7f7;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 4px solid #f28300;
+}
+.two{
+    border-bottom: 4px solid #d1d1d1;
+}
+.Ranking-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.Ranking-box .Ranking .img1,
+.Ranking-box .Ranking .img{
+    float: left;
+}
+.Ranking-box .Ranking .img img{
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+}
+.Ranking-box .Ranking ul:after{
+    content: '';
+    display: block;
+    clear: both
+}
+.Ranking-box .Ranking ul li{
+    float: left;
+    width: 52px;
+    height: 52px;
+    margin-left: 16px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+}
+.Ranking-box h4{
+    font-size: 18px;
+    margin-left: 16px;
+    float: left;
+    width: 200px;
+    margin-bottom: 16px;
+}
+.Ranking-box .Ranking ul li a,
+.Ranking-box .Ranking ul li span{
+    color: #f28300;
+    font-size: 16px;
+}
+.Ranking-box .Ranking ul li a{
+}
+.Ranking-box .Ranking ul li span{
+    display: block;
+    margin-top: 6px;
+}
+.Ranking-box .Ranking ul li:nth-child(3){
+    border: 1px solid #e2e2e2;
+    padding: 4px  4px 0 4px;
+    width: 44px;
+    height: 48px;
+}
+.Ranking-box .Ranking ul li p{
+    color: #606060;
+}
+.Ranking-box .Trophy{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.Ranking-box .Trophy .img1{
+    float: left;
+    margin-right: 16px;
+}
+.Ranking-box .Trophy p{
+    color: #989898;
+}
+.Ranking-box .triangle{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 30px solid #f28300;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.two .triangle{
+    border-top: 30px solid #d1d1d1;
+}
+
+
+.advertising{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 130px;
+    margin-top: 20px;
+    color: #676767;
+    background-color: #f7f7f7;
+}
+.more{
+    width: 1200px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #989898;
+    display: block;text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+}
+.more:hover{
+    color: #14b9d5;
+    background-color: #f7feff;
+}
+
+/*帮帮问答*/
+.article .img{
+    float: left;
+}
+.article .img img{
+    width: 46px;
+    height: 46px;
+    background-color: #eeeeee;
+}
+.article .img p{
+    color: #74243d;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.article:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.article-box  h3 a{
+    float: right;
+    font-size: 14px;
+    color: #676767;
+}
+.article-box h3 a:hover{
+    color: #46b9e6;
+}
+.article .centents:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.article .centents{
+    float: left;
+    width: 642px;
+    margin-left: 16px;
+    padding-bottom: 18px;
+}
+.article .centents h4{
+    font-size: 18px;
+}
+.article .centents p{
+    color: #989898;
+    margin: 14px 0 10px 0;
+}
+.article  .time{
+    width: 100%;
+    color: #676767;
+    clear: both;
+}

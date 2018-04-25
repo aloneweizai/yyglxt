@@ -1,0 +1,309 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="${siteInfo.description}"/>
+		<meta name="keywords" content="${siteInfo.keywords}"/>
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link type="text/css" rel="stylesheet"  href="/css/webpage_main-480.css"/>
+		<title>电子税局-ABC财税网</title>
+
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:1200px)" href="/css/webpage_main-1024.css"/>
+		<link type="text/css" rel="stylesheet" media="screen and (min-width:1201px)" href="/css/webpage_main.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/iconfont.css"> 
+		<!--[if IE 8]>
+			<link type="text/css" rel="stylesheet"  href="/css/webpage_main-1024.css"/>
+		<![endif]-->
+		
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.js" ></script>
+		
+		<script type="text/javascript" src="/js/webpage_main.js"></script>
+		<script type="text/javascript" src="/js/jquery.base64.min.js"></script>
+		<script type="text/javascript">
+			var snsUrl = "${snsUrl}";
+			var ucUrl = "${ucUrl}";
+			var picUrl= "${picUrl}";
+			var cswUrl = "${cswUrl}";
+		</script>
+		<script type="text/javascript" src="/js/services.js"></script>
+		${siteInfo.statisticsCode}
+		<style>
+			.ny_login_nav2 {
+				float: left;
+				color: #fff;
+			}
+			.ny_login_nav2 img{
+				height:40px;
+				width:40px;
+				border-radius:40px;
+				margin:7px;
+				float: left;
+			}
+			.ny_login_nav2 .user_name{
+				float: left;
+			}
+			.ny_login_nav2 .user_name p{
+				line-height:10px;
+				margin-top:12px;
+			}
+			.ny_login_nav2 .user_name a{
+
+			}
+		</style>
+	</head>
+
+	<body style="background:#fff;">
+		<!-- head -->
+		<div id="header">
+			<div class='ny_head'>
+				<div class='w_1200'>
+					<div class='ny_logo'>
+						<a href='${cswUrl}/index.html' title='网站首页'>
+							<div class='boximg'><span><img src='${cswUrl}/images/logo.png'></span></div>
+						</a>
+					</div>
+
+					<div class='ny-480-nav'>
+						<div class='ny-480-sg'>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<ul>
+							<li class='active'><a href='${cswUrl}/index.html'>首页</a></li>
+							<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+							<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+							<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+							<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+							<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+							<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+							<div class='clear'></div>
+						</ul>
+						<div class='ny-480-bg'></div>
+					</div>
+
+					<div class='fr'>
+						<div class='ny_nav'>
+							<ul>
+								<li><a href='${cswUrl}/index.html'>首页</a></li>
+								<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+								<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+								<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+								<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+								<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+								<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+								<div class='clear'></div>
+							</ul>
+						</div>
+						<div class="ny_login_serach">
+							<a href="${snsUrl}/search/index.html" target="_blank"><i class="iconfont">&#xe83b;</i>搜索</a>
+							<a href="javascript:void(0);" id="tiwen"><i class="iconfont">&#xe7c0;</i>提问</a>
+						</div>
+						<div id="loginheaddiv" class="ny_login_nav">
+							<a href="${ucUrl}/login">登录</a>|
+							<a href="${ucUrl}/login#zhuce">注册</a>
+						</div>
+
+						<div id="loginheaddiv_loged" class="ny_login_nav2" style="display:none;">
+							<img id="userpic_img" src="${cswUrl}/images/icon_zx_03.png">
+							<div class="user_name">
+								<p><a id="nickname_a" style="color: #fff; font-size: 12px;" href="${ucUrl}/index.html"></a></p>
+								<a id="vip_a" href="javascript:void (0)" style="color: #fcff00; font-size: 12px;"></a>
+							</div>
+							<div class="nemu-box">
+								<div class="center"><a id="level_a" href="javascript:void (0)"></a></div>
+								<ul><li name="${ucUrl}/index.html" link="${ucUrl}/userinfo/userinfolist.html" onclick="jbzl()"> <a href="javascript:void(0);"><i class="iconfont"> </i><span>基本资料</span></a></li>
+									<li name="${ucUrl}/index.html?#1_1" link="${ucUrl}/userinfo/userinfolist.html?#1_1" onclick="smrzClick()">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>实名认证</span></a>
+									</li>
+									<li name="${ucUrl}/userinfo/user_message.html" link="${ucUrl}/userinfo/user_message.html" onclick="wdxx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>我的消息</span></a>
+									</li>
+									<li name="${ucUrl}/member/member_index.html" link="${ucUrl}/member/member_index.html" onclick="hyzx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>会员中心</span></a>
+									</li>
+									<li class="tuichu"><a href="${ucUrl}/logout_index.html"><i class="iconfont"> </i><span>退出登录</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='clear'></div>
+		</div>
+		<!-- head end -->
+		<!-- main -->
+		<div class="chanpin-car" >
+			<a href="">
+				<img class="dzsj-img" src="/images/chanpindianzi.jpg" alt="">
+				<img class="dzsj-480" src="/images/dzsj-480.jpg" alt="">
+			</a>
+		</div>
+		<div class="electronics-content w_1200 clearfix">
+			<div class="electronics-content-left fl">
+				<p>产品介绍</p>
+				<p>湖南省国税电子税局系统是为落实国家“互联网+”行动战略部署和国家税务总局发布的“互联网+税务”行动计划，在原有网上办税厅的基础上建设的面向纳税人、税务干部和纳税服务大厅业务的综合办税服务系统，其整体格局为“一局三厅”，即一个电子税务局下面有网上办税厅、掌上办税厅和12366纳税服务厅,同时面向税务干部提供统一的税务端业务管理平台。
+	网上办税大厅：为纳税人提供办理税务登记、申报缴税、地税应用、发票管理、资格认定、行政许可审批、信息定制、优惠办理等各类电子办税事项，可以为纳税人提供较为完备的一体化远程办税服务。</p>
+				<p>12366纳税服务厅：12366服务厅是湖南省电子税务局系统的一个部分，不需要纳税人登录就可以使用。在12366服务厅，可以阅读最新的通知公告、热点问题、政策法规、办税指南信息，可以下载各类涉税软件、文件、表单，可以预约办税和提供办税厅导航功能。</p>
+				<p>掌上办税厅：分为手机APP和微信服务号两种形式，主要是提取网上办税大厅和12366纳税服务厅中适合在掌上设备中展示和操作的业务功能，包括办税、查询、服务三大模块。</p>
+			</div>
+			<div class="electronics-content-right fl">
+				<img src="/images/chanpindianzi1.jpg" alt="">
+			</div>
+			
+		</div>
+		<div class="electronics-bottom w_1200">
+			<p>功能特性</p>
+			<p>网上办税厅、纳税人服务厅、掌上办税厅,支持总局CA证书和地方CA身份验证和数据签名，所有办税事项申请都进行CA签名，附报资料自动归档，实现无纸化办税。	</p>
+			<ul class="clearfix">
+				<ul class="clearfix">
+					<li>
+						<i class="iconfont" style="background:#D7DBF8;color:#576EF2;">&#xe723;</i>
+						<p>税务登记</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#FBE7DE;color:#F28860;">&#xe7a2;</i>
+						<p>发票验旧</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#D1F0E1;color:#21AF65;">&#xe7b6;</i>
+						<p>发票代开</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#FEE6DA;color:#F98346;">&#xe7b5;</i>
+						<p>发票领用</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#D1F0E1;color:#20B068;">&#xe6ed;</i>
+						<p>资格认定</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#E7E0D0;color:#896413;">&#xe7b3;</i>
+						<p>行政审批</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#FFF0D1;color:#FCC010;">&#xe7b7;</i>
+						<p>优惠备案</p>
+					</li>
+					<li>
+						<i class="iconfont" style="background:#D3F0FF;color:#15BAFE;">&#xe6cd;</i>
+						<p>申报缴税</p>
+					</li>
+				</ul>
+			</div>
+			<div class="electronics-bottom-two w_1200">
+				<p>客户案例</p>
+				<p> 目前电子税务局已经在湖南国税推行使用受到广大纳税人的一致好评，也减轻大厅一线税务人员的压力。纳税人可以足不出户办结大多数涉稅项目。发票领用和申报缴税功能最受纳税人青睐。发票领用功能：纳税人提出申请后将有专业的快递公司在限定的时间将发票送货上门免去纳税人来回办税大厅和排队的时间。后期我们将会将此功能延伸到发票代开等项目为更多的纳税人服务。</p>
+			</div>
+		<!-- main end -->
+		<!-- footer  -->
+		<div class="footer">
+			<div class="w_1200">
+				<ul class="footer_nav">
+					<li>
+						<h3><a href="${cswUrl}/aboutus/fc5d52f799ba4f9fa6968c9105015d4d.html" target="_blank">关于我们</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/aboutus/62f19008a49a4008912e7ab64c75a945.html" target="_blank">联系我们</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/16241b879f4248bda857688c13ae9fd7.html" target="_blank">版权声明</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/09e1eda03bc04a92b5a891fa16d8301d.html" target="_blank">隐私政策</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/e8ee90183ece4ffaaf1c1d3e62555feb.html" target="_blank">商务合作</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/products/index.html" target="_blank">产品</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">ABC财税专家</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">ABC电子申报</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">电子税局</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/11e6ae0f2fea42b695e406299ce9f6fa.html" target="_blank">税务公众号</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/services/index.html" target="_blank">服务</a></h3>
+						<dl>
+							<dd>
+								<a href="javascript:void(0);" onclick="sbfwxfClick();">申报服务续费</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="wjmmClick();">忘记申报密码</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="sqfpClick();">索取发票</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="jfczClick();">帐户充值</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${snsUrl}/help/knowledge/index.html" target="_blank">帮助中心</a></h3>
+						<dl>
+							<dd>
+								<a href="${ucUrl}/login#zhuce" target="_blank">用户注册</a>
+							</dd>
+							<dd>
+								<a href="${ucUrl}/forgotpassword.html" target="_blank">找回密码</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/index.html" target="_blank">常见问题</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b" target="_blank">新手指南</a>
+							</dd>
+						</dl>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="footer_link">
+					<h3><a href="">友情链接</a></h3>
+					<ul>
+						<#if links?? && links?size gt 0>
+							<#list links as link>
+								<li>
+									<a href="${link.domain!}" target="_blank">${link.siteName!}</a>
+								</li>
+							</#list>
+						</#if>
+
+
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="footer_code"><img src="/images/code.jpg">微信关注我们</div>
+				<div class="clear"></div>
+			</div>
+			<div class="foot w_1200">
+				<div class="fl">Copyright © 2005-2015 ABC12366 All Rights Reserved 粤ICP备08111004号-3
+					<script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=4a80c3b8-1619-4ffa-ae2e-16c54df84596&width=70&height=22&type=2" type="text/javascript" charset="utf-8"></script>
+				</div>
+				<div class="fr">
+					<div class="yuan bg_blue fl">T</div>400-887-3133</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- footer end -->
+
+	</body>
+	<script type="text/javascript" src="/js/header.js"></script>
+</html>

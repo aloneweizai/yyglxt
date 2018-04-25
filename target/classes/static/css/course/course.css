@@ -1,0 +1,748 @@
+html,body{
+    height:100%;
+}
+h3{
+    font-weight: bold;
+}
+/* 左边 */
+.container-fluid{
+    height: 100%;
+    position:relative;
+}
+.row{
+    height: 100%;
+}
+.classroom-left{
+    height:100%;
+    padding:0;
+    border-right:2px solid #ccc;
+}
+.classroom-left-up{
+    border-bottom:1px solid #ccc;
+}
+.classroom-left-up ul{
+    max-width:100%;
+    padding:10px 0;
+    margin:0;
+
+}
+
+.classroom-left-up li{
+    width: 18%;
+    text-align: center;
+    color:#666;
+}
+.classroom-left-down{
+    text-align:left;
+}
+.classroom-left-down ul {
+    text-align:left;
+}
+.classroom-left-list ul li{
+    background:url("../../images/add.png")no-repeat left center;
+    background-size:12px;
+    padding-left:30px;
+    margin:10px 0;
+    margin-left:25px;
+    cursor: pointer;
+}
+.open{
+    background:url("../../images/minus.png")no-repeat left center;
+    padding-left:30px;
+    margin-left:10px;
+    background-size:14px;
+    cursor:pointer;
+}
+.side{
+    border-left:10px solid #ccc;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    height:40px;
+    width: 10px;
+    position:absolute;
+    right:-10px;
+
+}
+.side p{
+    position:absolute;
+    top:30%;
+    left:-12px;
+    font-size:8px;
+}
+/* 右边 */
+.classroom-right-up{
+    overflow:hidden;
+}
+.classroom-right-up span{
+    float:right;
+    padding:10px 20px;
+}
+.classroom-right-content{
+    margin:5px 0;
+}
+.classroom-right-content button{
+    height: 28px;
+}
+.classroom-right-content select{
+    position:relative;
+    top:2px;
+}
+/*课程页头*/
+.room-nav{
+    background-color:#fff;
+    width: 100%;
+    position:fixed;
+    top:0;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    z-index:99;
+}
+.room-subnav{
+    line-height:60px;
+    padding-left:35px;
+    font-size:20px;
+    color:#58a6e7;
+}
+.room-subnav a.active{
+    text-decoration:none;
+    color:#58a6e7;
+}
+.room-subnav a{
+    text-decoration: none;
+    padding-left:50px;
+    color:#333;
+    cursor:pointer;
+}
+
+/*创建课程*/
+.newclassroom-table{
+    margin:0 auto;
+    margin-top: 90px;
+    background-color: #fff;
+}
+.newclassroom-table tbody,
+.newclassroom-table tfoot{
+    padding:15px 20px;
+    display:block;
+}
+
+.newclassroom-table thead{
+    border-bottom:1px solid #ccc;
+    padding: 5px 100px;
+    display: block;
+}
+.newclassroom-table tbody{
+    margin-top:10px;
+}
+.newclassroom-table tr{
+    display:block;
+    margin:10px 0;
+}
+.newclassroom-table .title{
+    width:100%
+}
+.newclassroom-table .title input{
+    width:95%;
+}
+.newclassroom-table thead .last th{
+    font-size:18px;
+    font-weight:bold;
+    margin:0 65px;
+    padding:5px 0;
+    display:inline-block;
+    cursor:pointer;
+
+}
+.newclassroom-table thead .last th.active{
+    color:#58a6e7;
+}
+.select td:nth-child(2){
+    width:180px;
+}
+.newclassroom-body {
+    background-color:#F0F0F0;
+}
+.select td:nth-child(2) select {
+    width: 100%;
+}
+.sign span:last-child{
+    font-size:13px;
+    color:grey;
+}
+.number input {
+    width:25%;
+}
+.number span{
+    font-size:13px;
+    color:grey;
+}
+.training input{
+    width:155%;
+}
+.cover p{
+    font-size:13px;
+    color:grey;
+}
+.cover button{
+}
+.cover td:last-child{
+    padding-left:20px;
+}
+.labels button{
+    padding:5px 10px;
+    margin:0 10px;
+}
+.lecturer div{
+    display:inline-block;
+}
+.lecturer div img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+}
+.lecturer span{
+    display:inline-block;
+    margin:0 15px;
+}
+.profile td:first-child{
+    display:inline-block;
+}
+.profile td:last-child{
+    width:90%;
+    display:inline-block;
+}
+.profile td:last-child textarea{
+    width:100%;
+    display:block;
+}
+.newclassroom-table .price{
+    display:block;
+}
+.price input{
+    display:inline-block;
+    width:10%;
+}
+.member input{
+    display:inline-block;
+    margin-left:15px;
+}
+.foot a{
+    margin-left:50px;
+    display:inline-block;
+}
+.foot button{
+    display:inline-block;
+    margin-left: 50px;
+    width:150px;
+    height:30px;
+    padding:0;
+}
+/*课时信息*/
+.glyphicon{
+    top:2px;
+}
+tbody.last tr:first-child{
+    display:block;
+    width:100%;
+
+}
+tbody.last tr:first-child td:first-child span{
+    font-size:12px;
+    color:grey;
+    text-align: right;
+    padding-left:275px;
+    display:inline-block;
+}
+tbody.last tr:first-child td{
+    padding:0 10px;
+}
+.chapter{
+    position:relative
+}
+.chapter ul{
+    position:absolute;
+    right:11px;
+    background:#fff;
+}
+.chapter ul p{
+    color:#666;
+}
+.chapter ul li{
+    padding:10px 20px;
+}
+.Introduction{
+    background:#fff;
+    display:inline-block;
+    width:85%;
+    border:1px solid #ccc;
+}
+.Introduction input {
+    border:none;
+    display:inline-block;
+    width:70%;
+}
+.Introduction input:focus{
+    box-shadow:none;
+}
+.Introduction div{
+    text-align:center;
+    display:inline-block;
+    width:28%;
+    border-left:1px solid #ccc;
+}
+.Introduction li{
+    padding:0 15px;
+    line-height:2.5;
+    color:#666;
+}
+.courseware {
+    position:relative;
+    margin-left:36px;
+    background:#fff;
+    display:inline-block;
+    width:81%;
+    border:1px solid #ccc;
+}
+.courseware input {
+    border:none;
+    display:inline-block;
+    width:60%;
+    padding-left:25px;
+}
+.courseware input:focus{
+    box-shadow:none;
+}
+.courseware div{
+    text-align:center;
+    display:inline-block;
+    width:38%;
+    border-left:1px solid #ccc;
+}
+.courseware li{
+    display:inline-block;
+    padding:0 15px;
+    line-height:2.5;
+}
+.courseware span{
+    top:2px;
+    padding-right:5px;
+    color:#666;
+}
+.courseware i{
+    height: 25px;
+    width: 25px;
+    position:absolute;
+    background:url('../../images/document.png') no-repeat;
+    background-size:25px;
+    top:4px;
+}
+.courseware s{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: url('../../images/video.png') no-repeat;
+    background-size: 17px;
+    top: 8px;
+    left: 4px;
+
+}
+.cable{
+    height: 35px;
+    width: 22px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: -15px;
+    left: 14px;
+}
+.cable-down{
+    height: 33px;
+    width: 0px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+/*添加章/节弹窗*/
+.Popup {
+    height: 200px;
+    width: 500px;
+    position:absolute;
+    top:12%;
+    left:30%;
+    background-color:#fff;
+    border-radius: 5px;
+}
+.Popup-nav{
+    width:100%;
+    height:30px;
+    background-color:#666;
+}
+.Popup-nav span{
+    color:#fff;
+    line-height:30px;
+    padding-left:15px;
+    font-size:16px;
+    display:block;
+    width:100%;
+}
+.Popup-nav span u{
+    margin-top:5px;
+    text-decoration:none;
+    float:right;
+    margin-right:20px;
+    cursor:pointer;
+}
+.Popup-content{
+    width: 100%;
+}
+.Popup-content p{
+    text-align: center;
+    margin-top:20px;
+}
+.Popup-content input{
+    width:70%;
+}
+.Popup-foot{
+    border-top:1px solid #ccc;
+    text-align:right;
+    margin-top:20px;
+}
+.Popup-foot button{
+    margin-top:15px;
+    margin-right:20px;
+}
+/*添加课件弹窗*/
+.popup-courseware{
+    width: 800px;
+    position:absolute;
+    top:3%;
+    left:23%;
+    background-color:#fff;
+    border-radius: 5px;
+}
+
+.popup-courseware   tbody tr{
+    margin-left:50px;
+    margin-top:15px;
+    display:block;
+}
+.popup-courseware   tbody tr.video-two{
+    display:none;
+}
+.popup-courseware   tbody tr td:first-child{
+    width: 85px;
+}
+.popup-courseware   tbody tr td:nth-child(2){
+    padding-left:15px;
+}
+
+.popup-courseware label{
+    font-weight:normal;
+    margin-right:15px;
+}
+.popup-courseware thead {
+    display: block;
+    width: 100%;
+}
+.popup-courseware thead tr:not(:first-child){
+    margin-left:50px;
+    margin-top:15px;
+    display:block;
+}
+.popup-courseware thead tr td:first-child{
+    width: 85px;
+}
+.popup-courseware thead tr td:nth-child(2){
+    padding-left:15px;
+}
+.popup-courseware thead tr{
+    display:block;
+    width: 100%;
+}
+.popup-courseware thead th{
+    display:block;
+    width: 100%;
+    padding:10px 0;
+    padding-left:15px;
+    font-size:16px;
+    color:#fff;
+    background:#666;
+}
+.popup-courseware tfoot {
+    text-align:right;
+}
+.upload{
+    height:350px;
+    width:620px;
+    border:1px solid #ccc;
+}
+.upload .head{
+    height:40px;
+    width: 100%;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+.upload .head span{
+    display:inline-block;
+    width: 31%;
+    line-height:40px;
+/*    padding-left:20px;*/
+}
+.popup-courseware tbody span{
+    font-size :12px;
+    color:grey;
+}
+.upload .content {
+    width: 100%;
+}
+.upload .content textarea{
+    width: 100%;
+    height:100px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.upload .content textarea::-webkit-input-placeholder {
+    text-align: center;
+    line-height:95px;
+}
+.upload .middle{
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+}
+.upload .down {
+    margin-top:15px;
+}
+.upload .down li{
+    list-style:inherit;
+    width: 80%;
+    margin-left: 50px;
+    padding :7px 0;
+}
+.upload .down li span{
+    font-size:14px;
+}
+.popup-courseware tfoot {
+    margin-top:25px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.popup-courseware tfoot tr{
+    display:block;
+    width: 100%;
+}
+.popup-courseware tfoot td{
+    padding: 10px 0;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    display:block;
+}
+.popup-courseware tfoot td button{
+    margin-right:20px;
+}
+.popup-courseware thead u{
+    text-decoration:none;
+    float:right;
+    margin-right:20px;
+    cursor:pointer;
+}
+/*视频文件外链*/
+.popup-courseware-video tbody tr .video-two{
+    display:none;
+}
+.video-two .upload-two{
+    height: 200px;
+    width: 600px;
+    border:1px solid #ccc;
+}
+.upload-search{
+    width: 100%;
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+.upload-search input{
+    margin-left:15px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+.upload-two ul{
+    display:flex;
+    justify-content: space-between;
+}
+.upload-two li{
+    padding:10px 15px;
+    color:#666;
+}
+/* 音频 */
+.popup-courseware-audio .upload{
+    height:260px;
+}
+.popup-courseware-audio .upload .middle{
+    text-align: right;
+    padding-right:30px;
+}
+.popup-courseware-document .upload .middle{
+    text-align:right;
+    padding-right:30px;
+}
+/*授课情况*/
+.classroom-case{
+    width: 1000px;
+    position:absolute;
+    top:10%;
+    left:20%;
+    background-color:#fff;
+    padding-bottom:50px;
+}
+.classroom-case table {
+    width: 100%;
+}
+.classroom-case thead {
+    display:block;
+    width: 100%;
+}
+.classroom-case  tr{
+    display:inline-block;
+    width: 100%;
+}
+.classroom-case>table>thead tr:first-child{
+    background:#666
+}
+.classroom-case>table>thead tr:first-child th{
+    font-size:18px;
+    color:#fff;
+    font-weight:bold;
+    padding:10px 15px;
+    display:inline-block;
+    width: 100%;
+    overflow:hidden;
+}
+.classroom-case>table>thead tr:first-child th s{
+    text-decoration:none;
+    float:right;
+    padding-right:15px;
+}
+.classroom-case>table>thead tr:last-child td{
+    display:inline-block;
+    padding:6px 2px;
+    margin:10px 15px;
+    font-size:16px;
+}
+.classroom-case>table>thead tr:last-child td.active{
+    border-bottom:2px solid #666;
+}
+.classroom-case tbody td{
+    padding:10px;
+}
+.classroom-case tbody button{
+    width: 100px;
+    border-radius:5px;
+}
+.classroom-case tbody .classroom-case-list  table{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.classroom-case tbody .classroom-case-list  table thead{
+    display:table-header-group;
+}
+.classroom-case tbody .classroom-case-list table tr{
+    display:table-row;
+}
+.classroom-case tbody .classroom-case-list  table td{
+
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    padding: 10px 15px;
+    margin: 0;
+    text-align:center;
+}
+/*讲师管理*/
+.teacher{
+    width: 100%;
+    padding-top: 50px;
+    background: #fff;
+    height: 100%;
+
+}
+.teacher table{
+    width: 100%;
+}
+.teacher>table>thead{
+    display: block;
+    width: 100%;
+}
+.teacher>table>thead th{
+    font-size:18px;
+    font-weight: bold;
+    color:#333;
+    padding-left: 40px;
+}
+.teacher>table>tbody>tr{
+    display:block;
+    margin:25px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.teacher>table>tbody table{
+    border:1px solid #ccc;
+}
+.teacher>table>tbody table td{
+    text-align:center;
+    border:1px solid #ccc;
+    padding: 10px 25px;
+}
+.teacher>table>tbody>tr:first-child td{
+    display:block;
+    overflow:hidden;
+}
+.teacher>table>tbody>tr:first-child td :nth-child(2){
+    margin-left:60px;
+    width:100px;
+}
+.teacher>table>tbody>tr:first-child td button:last-child{
+    float:right;
+    padding:10px 15px;
+}
+/* .teacher>table>tbody tr:nth-child(2) td{
+ display:block;
+}  */
+.teacher>table>tbody td table{
+    width:100%;
+}
+.tearcher-table{
+    display: block;
+}
+/*遮罩层*/
+.bg{
+    display:none;
+    height: 100%;
+    width: 100%;
+    background:#000;
+    opacity:0.5;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+}
+.classroom-case s{
+    cursor:pointer;
+}
+.teaching {
+    cursor: pointer;
+}
+.classroom-case-one,
+.classroom-case-two,
+.classroom-case-three,
+.last li{
+    cursor: pointer;
+}
+td.division{
+    position:relative;
+}

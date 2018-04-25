@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="${siteInfo.description}"/>
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link type="text/css" rel="stylesheet"  href="/css/webpage_main-480.css"/>
+	<#if csb.contentExt.description?? && csb.contentExt.description?length gt 0>
+		<meta name="keywords" content="${csb.contentExt.description}"/>
+		<#else>
+			<meta name="keywords" content="${siteInfo.keywords}"/>
+	</#if>
+
+
+	<title>
+		${csb.contentExt.title}-ABC财税网
+	</title>
+
+	<script type="text/javascript">
+		var ctx='${siteInfo.domain}';
+		var snsUrl = "${snsUrl}";
+		var ucUrl = "${ucUrl}";
+		var picUrl= "${picUrl}";
+		var cswUrl = "${cswUrl}";
+	</script>
+
+	<script type="text/javascript" src="${cswUrl}/js/jquery-1.11.1.min.js"></script>
+	<script src="${cswUrl}/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="${cswUrl}/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="${cswUrl}/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="${cswUrl}/css/public.css">
+	<link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:1200px)" href="${cswUrl}/css/webpage_main-1024.css"/>
+	<link type="text/css" rel="stylesheet" media="screen and (min-width:1201px)" href="${cswUrl}/css/webpage_main.css"/>
+	<!--[if IE 8]>
+	<link type="text/css" rel="stylesheet"  href="${cswUrl}/css/webpage_main-1024.css"/>
+	<![endif]-->
+	<script type="text/javascript" src="${cswUrl}/js/webpage_main.js"></script>
+	<script type="text/javascript" src="${cswUrl}/js/jquery.base64.min.js"></script>
+	<script type="text/javascript" src="${cswUrl}/js/services.js"></script>
+	${siteInfo.statisticsCode}
+	<style>
+		.ny_login_nav2 {
+			float: left;
+			color: #fff;
+		}
+		.ny_login_nav2 img{
+			height:40px;
+			width:40px;
+			border-radius:40px;
+			margin:7px;
+			float: left;
+		}
+		.ny_login_nav2 .user_name{
+			float: left;
+		}
+		.ny_login_nav2 .user_name p{
+			line-height:10px;
+			margin-top:12px;
+		}
+		.ny_login_nav2 .user_name a{
+
+		}
+	</style>
+</head>
+
+<body style="background: #ececec;">
+<!-- head -->
+<div id="header">
+	<div class='ny_head'>
+		<div class='w_1200'>
+			<div class='ny_logo'>
+				<a href='${cswUrl}/index.html' title='网站首页'>
+					<div class='boximg'><span><img src='${cswUrl}/images/logo.png'></span></div>
+				</a>
+			</div>
+
+			<div class='ny-480-nav'>
+				<div class='ny-480-sg'>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul>
+					<li class='active'><a href='${cswUrl}/index.html'>首页</a></li>
+					<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+					<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+					<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+					<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+					<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+					<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+					<div class='clear'></div>
+				</ul>
+				<div class='ny-480-bg'></div>
+			</div>
+
+			<div class='fr'>
+				<div class='ny_nav'>
+					<ul>
+						<li><a href='${cswUrl}/index.html'>首页</a></li>
+						<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+						<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+						<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+						<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+						<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+						<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+						<div class='clear'></div>
+					</ul>
+				</div>
+				<div class="ny_login_serach">
+					<a href="${snsUrl}/search/index.html" target="_blank"><i class="iconfont">&#xe83b;</i>搜索</a>
+					<a href="javascript:void(0);" id="tiwen"><i class="iconfont">&#xe7c0;</i>提问</a>
+				</div>
+				<div id="loginheaddiv" class="ny_login_nav">
+					<a href="${ucUrl}/login">登录</a>|
+					<a href="${ucUrl}/login#zhuce">注册</a>
+				</div>
+
+				<div id="loginheaddiv_loged" class="ny_login_nav2" style="display:none;">
+					<img id="userpic_img" src="${cswUrl}/images/icon_zx_03.png">
+					<div class="user_name">
+						<p><a id="nickname_a" style="color: #fff; font-size: 12px;" href="${ucUrl}/index.html"></a></p>
+						<a id="vip_a" href="javascript:void (0)" style="color: #fcff00; font-size: 12px;"></a>
+					</div>
+					<div class="nemu-box">
+						<div class="center"><a id="level_a" href="javascript:void (0)"></a></div>
+						<ul><li name="${ucUrl}/index.html" link="${ucUrl}/userinfo/userinfolist.html" onclick="jbzl()"> <a href="javascript:void(0);"><i class="iconfont"> </i><span>基本资料</span></a></li>
+							<li name="${ucUrl}/index.html?#1_1" link="${ucUrl}/userinfo/userinfolist.html?#1_1" onclick="smrzClick()">
+								<a href="javascript:void(0);"><i class="iconfont"> </i><span>实名认证</span></a>
+							</li>
+							<li name="${ucUrl}/userinfo/user_message.html" link="${ucUrl}/userinfo/user_message.html" onclick="wdxx();">
+								<a href="javascript:void(0);"><i class="iconfont"> </i><span>我的消息</span></a>
+							</li>
+							<li name="${ucUrl}/member/member_index.html" link="${ucUrl}/member/member_index.html" onclick="hyzx();">
+								<a href="javascript:void(0);"><i class="iconfont"> </i><span>会员中心</span></a>
+							</li>
+							<li class="tuichu"><a href="${ucUrl}/logout_index.html"><i class="iconfont"> </i><span>退出登录</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='clear'></div>
+</div>
+
+<!-- head end -->
+<!-- main -->
+<div class="w_1200">
+
+	<div class="zx_liebiao_left2">
+		<div class="zx_wenzhang">
+			<div class="zx_wenzhang_title">
+				<h3 style="color:${csb.contentExt.titleColor!''}">${csb.contentExt.title}</h3>
+				<div class="detatime">
+					<div class="wenzhang_biaoqian">
+						<#if csb.contentAttrList?? && csb.contentAttrList?size gt 0>
+							<#list csb.contentAttrList as contentAttr>
+								<#if contentAttr.attrName =='gatherAndEdit' && contentAttr.attrValue=='0'>
+									<span class="dpib p5 pt0 pb0 fs12 b1 lh20 h20 bdr3">原创</span>
+								</#if>
+								<#if contentAttr.attrName =='gatherAndEdit' && contentAttr.attrValue=='1'>
+									<span class="dpib p5 pt0 pb0 fs12 b1 lh20 h20 bdr3">转载</span>
+								</#if>
+							</#list>
+						</#if>
+						作者：${csb.contentExt.author!''}&nbsp;&nbsp;
+
+						<#if csb.contentAttrList?? && csb.contentAttrList?size gt 0>
+							<#list csb.contentAttrList as contentAttr>
+								<#if contentAttr.attrName =='gatherAndEdit' && contentAttr.attrValue=='1'>
+									来源：${csb.contentExt.origin!''}&nbsp;&nbsp;
+								</#if>
+								<#if contentAttr.attrName =='gatherAndEdit' && contentAttr.attrValue=='0'>
+									来源：ABC财税网&nbsp;&nbsp;
+								</#if>
+							</#list>
+							<#else>
+								来源：${csb.contentExt.origin!'ABC财税网'}&nbsp;&nbsp;
+						</#if>
+
+						${(csb.contentExt.releaseDate?string('yyyy-MM-dd'))!}
+					</div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="zx_zhengwen">
+				<p>${csb.contentTxt.txt!}</p>
+
+				<#if csb.fileList?? && csb.fileList?size gt 0>
+					相关附件：<br>
+					<#list csb.fileList as file>
+						<a href="${cswUrl}${file.filePath}">${file.fileName}</a><br>
+					</#list>
+				</#if>
+			</div>
+			<#if csb.content??>
+				<#if csb.content.contentType?? && csb.content.contentType?length gt 0>
+					<div class="wenzhang_biaoqian" style="text-align: left">
+						<#assign labels = csb.content.contentType?split(";")/>
+						<#if labels?? && labels?size gt 0>
+							<i class="iconfont ">&#xe78d;</i>
+						</#if>
+						<#list labels as label>
+							<#list contentLabelList as contentLable>
+								<#if contentLable.tagId?? && label == contentLable.tagId>
+									<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank" style="margin-right: 16px;"><u style="text-decoration:none">${contentLable.tagName}</u></a>
+								</#if>
+							</#list>
+						</#list>
+					</div>
+				</#if>
+			</#if>
+			<div style="height:16px;"></div>
+			<div class="zx_shengming">
+				<i class="iconfont">&#xe7cc;</i>
+				<span>声明：${siteInfo.statement!}</span>
+			</div>
+		</div>
+		<#if linkContentList??>
+			<div class="zx_wenzhang">
+				<div class="list_title">
+					您可能感兴趣的文章
+				</div>
+				<ul class="zx_list">
+					<#list linkContentList as content>
+						<a href="${cswUrl}${content.staticLink!}">
+							<li>
+								<i class='iconfont'>&#xe739;</i>
+								${content.title!''}
+							</li>
+						</a>
+					</#list>
+
+					<div class="clear"></div>
+					<!--
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                        <li><img src="images/zx_29.jpg"><p>国家税务总局关于发布增值税发票系统升级版与税发布增值发票系统升级版与税发布增值税发于发布增值税发票系</p></li>
+                    -->
+				</ul>
+			</div>
+		</#if>
+	</div>
+
+
+	<div class="zx_liebiao_right2">
+
+		<ul class="zx_liebiao_dh2" id="hotContent"><div class="list_title"><span>热门资讯</span></div><li class="max"><a href="https://www.abc12366.com//news/zcfg/0ef6385d445a4492be2184dfc3478714.html"><img src="https://www.abc12366.com/images/201801051808260502.jpg"><div class="xuhao">Top1</div> <div class="zx_right_title"> <p>湖南省国家税务局 湖南省财政厅关于农产品增值税进项税额核定扣除试点有关事项的公告</p> <span>1515147011000</span> </div></a></li><li class="max"><a href="https://www.abc12366.com//news/zcfg/8f000330bced4848b3ca0c304db9ea60.html"><img src="https://www.abc12366.com/images/201801081927550089.jpg"><div class="xuhao">Top2</div> <div class="zx_right_title"> <p>国家税务总局关于长期来华定居专家免征车辆购置税有关问题的公告</p> <span>1515410935000</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/zcjd/0183c4c5176242d79edb0230f7ab5bc1.html"><img src="https://www.abc12366.com/images/201801051527370747.jpg"><div class="xuhao">3</div> <div class="zx_right_title"> <p>关于《国家税务总局关于调整增值税纳税申报有关事项的公告》的解读</p> <span>2018-01-05</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/77b89e4646b946dcbc37b7052f8218f6.html"><img src="https://www.abc12366.com/images/201801081916010864.png"><div class="xuhao">4</div> <div class="zx_right_title"> <p>国家税务总局关于成品油消费税征收管理有关问题的公告</p> <span>2018-01-08</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/zcjd/6ba97cf8b48a425e8b30dfffdb60880b.html"><img src="https://www.abc12366.com/images/201801081926100879.jpg"><div class="xuhao">5</div> <div class="zx_right_title"> <p>关于《国家税务总局关于长期来华定居专家免征车辆购置税有关问题的公告》的解读</p> <span>2018-01-08</span> </div></a></li></ul>
+
+		<div class="zx_liebiao_dh2" id="yourAnswer"><div class="list_title" style="margin-bottom: 0;"><i class="iconfont" style="color: #FF7800; "></i><span>帮邦等你回答</span><div class="clear"></div></div>
+			<a href="javascript:void(0);" target="_blank" class="byry-more">更多+</a>
+			<ul class="bangyoureyi"><li><a href="https://bb.abc12366.com/topic/xiangqing/8e915913065d4e50a1fa86164d3f2dd8" target="_blank"><i style="background: #FF3B35;">1</i><span>若不去撇终是苦，各自捺住方成名</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/f09a4cb2fa644cea9c89bf42974a38c3" target="_blank"><i style="background: #FC7D30;">2</i><span>测试工作很繁琐吗？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/6e71ad2c946841cfbdbc056aeb652ee1" target="_blank"><i style="background: #FCBF30;">3</i><span>雇主责任险</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/4ba9c2727c6c4fecb2a07ce74956bba6" target="_blank"><i>4</i><span>撒大声地</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/0f948f49781947a49ed3738a3dad2834" target="_blank"><i>5</i><span>增值税:是指只对商品增值部分征收的税种,例:一台电视机进价是1200元,售价是1300元,纳税人只对增值部分交纳增值税.比如税率是7%,应该纳税?</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/2281b584ce484ef883bb54c029569db8" target="_blank"><i>6</i><span>阿斯蒂芬</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/eaada15e07a043a8929f0c6fa46d78ac" target="_blank"><i>7</i><span>沙发</span></a></li></ul></div>
+
+		<div class="zx_liebiao_dh2" id="hotDiscussion"><div class="list_title" style="margin-bottom: 0;"><i class="iconfont" style="color: #FF7800; "></i><span>帮友热议</span>
+
+			<div class="clear"></div></div>
+			<a href="javascript:void(0);" target="_blank" class="byry-more">更多+</a>
+			<ul class="bangyoureyi"><li><a href="https://bb.abc12366.com/topic/xiangqing/80e0e2c1384d45539974dcfaa80fd7a8" target="_blank"><i style="background: #FF3B35;">1</i><span>对小微企业增值税发票领用有些什么要求？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/aec1f95239d14b37a35d0390cd09e983" target="_blank"><i style="background: #FC7D30;">2</i><span>2017所得税政策有什么变化？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/62fec1caeafe4e94a251a4b2d6cf4f7f" target="_blank"><i style="background: #FCBF30;">3</i><span>什么是增值税？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/7db0cf002748466bbf908a0e16442289" target="_blank"><i>4</i><span>母公司把设备租给子公司收租赁费，母公司可用增值税发票开吗，还是到税务局代开。</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/aae79fc40777441d8ffb248efecb3556" target="_blank"><i>5</i><span>南非是如何从发达国家退化为发展中国家的？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/c8e2cdda7def47b7abae493f48fa5fca" target="_blank"><i>6</i><span>增值税免税政策有哪些</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/72ef285c8e1042258e42b09f013b2647" target="_blank"><i>7</i><span>一般纳税人</span></a></li></ul></div>
+
+		<div class="zx_liebiao_dh2" id="hotknowledge"><div class="list_title" style="margin-bottom: 0;"><i class="iconfont" style="color:  #FF7800; "></i><span>热点知识</span><div class="clear"></div></div>
+			<a href="javascript:void(0);" target="_blank" class="byry-more">更多+</a>
+			<ul class="bangyoureyi"><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=65c793aa-463c-4238-8d28-8c899742430d"><i style="background: #FF3B35;">1</i><span>ABC4000电子申报缴税软件产品简介</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=ccbb88153ed54a599c23a1b84fd5f6b9"><i style="background: #FC7D30;">2</i><span>ABC财税专家新手指南</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=7a94385974c1446cafdae97ddfca2dfb"><i style="background: #FCBF30;">3</i><span>ABC4000系统概述及主要功能</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=2b4890515a944a5a9a8ee91e73d59774"><i> 4</i><span>“预收款”该怎么做处理？又该如何进行风险规避？</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=7d50d9040786454f96cc5085430394af"><i> 5</i><span>ABC4000登录身份验证</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=306a139c25bb484ca72391a50ec113ac"><i> 6</i><span>艾易税系统操作指南</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b"><i> 7</i><span>ABC财税网新手指南</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=258fc9f1e9d64ffe85c391369713ff1c"><i> 8</i><span>包装物押金的会计处理</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=cb37a954048a4134b3f8e0facec4fd6c"><i> 9</i><span>支票的填写</span></a></li><li><a href="https://bb.abc12366.com/help/knowledge/detail.html?id=0730cbc7985547b49964e02255beb14c"><i> 10</i><span>电子缴税</span></a></li></ul></div>
+
+
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- main end -->
+<!-- footer  -->
+<div class="footer">
+	<div class="w_1200">
+		<ul class="footer_nav">
+			<li>
+				<h3><a href="${cswUrl}/aboutus/fc5d52f799ba4f9fa6968c9105015d4d.html" target="_blank">关于我们</a></h3>
+				<dl>
+					<dd>
+						<a href="${cswUrl}/aboutus/62f19008a49a4008912e7ab64c75a945.html" target="_blank">联系我们</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/aboutus/16241b879f4248bda857688c13ae9fd7.html" target="_blank">版权声明</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/aboutus/09e1eda03bc04a92b5a891fa16d8301d.html" target="_blank">隐私政策</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/aboutus/e8ee90183ece4ffaaf1c1d3e62555feb.html" target="_blank">商务合作</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<h3><a href="${cswUrl}/products/index.html" target="_blank">产品</a></h3>
+				<dl>
+					<dd>
+						<a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">ABC财税专家</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">ABC电子申报</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">电子税局</a>
+					</dd>
+					<dd>
+						<a href="${cswUrl}/products/11e6ae0f2fea42b695e406299ce9f6fa.html" target="_blank">税务公众号</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<h3><a href="${cswUrl}/services/index.html" target="_blank">服务</a></h3>
+				<dl>
+					<dd>
+						<a href="javascript:void(0);" onclick="sbfwxfClick();">申报服务续费</a>
+					</dd>
+					<dd>
+						<a href="javascript:void(0);" onclick="wjmmClick();">忘记申报密码</a>
+					</dd>
+					<dd>
+						<a href="javascript:void(0);" onclick="sqfpClick();">索取发票</a>
+					</dd>
+					<dd>
+						<a href="javascript:void(0);" onclick="jfczClick();">帐户充值</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<h3><a href="${snsUrl}/help/knowledge/index.html" target="_blank">帮助中心</a></h3>
+				<dl>
+					<dd>
+						<a href="${ucUrl}/login#zhuce" target="_blank">用户注册</a>
+					</dd>
+					<dd>
+						<a href="${ucUrl}/forgotpassword.html" target="_blank">找回密码</a>
+					</dd>
+					<dd>
+						<a href="${snsUrl}/help/knowledge/index.html" target="_blank">常见问题</a>
+					</dd>
+					<dd>
+						<a href="${snsUrl}/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b" target="_blank">新手指南</a>
+					</dd>
+				</dl>
+			</li>
+			<div class="clear"></div>
+		</ul>
+		<div class="footer_link">
+			<h3><a href="">友情链接</a></h3>
+			<ul>
+				<#if links?? && links?size gt 0>
+					<#list links as link>
+						<li>
+							<a href="${link.domain!}" target="_blank">${link.siteName!}</a>
+						</li>
+					</#list>
+				</#if>
+
+
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<div class="footer_code"><img src="${cswUrl}/images/code.jpg">微信关注我们</div>
+		<div class="clear"></div>
+	</div>
+	<div class="foot w_1200">
+		<div class="fl">Copyright © 2005-2015 ABC12366 All Rights Reserved 粤ICP备08111004号-3
+			<script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=4a80c3b8-1619-4ffa-ae2e-16c54df84596&width=70&height=22&type=2" type="text/javascript" charset="utf-8"></script>
+		</div>
+		<div class="fr"><div class="yuan bg_blue fl">T</div>400-887-3133</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!-- footer end -->
+</body>
+<script type="text/javascript" src="${cswUrl}/js/header.js"></script>
+<script type="text/javascript" src="${cswUrl}/js/right.js"></script>
+
+</html>

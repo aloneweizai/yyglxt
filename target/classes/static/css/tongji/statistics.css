@@ -1,0 +1,164 @@
+.page_stat .g_container .container_wrapper {
+    margin: 120px 40px 0 120px;
+}
+
+.table-zy {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.table-zy td {
+    padding: 8px 2px;
+}
+
+.table-zy td span {
+    background: #2ECC71;
+    color: #fff;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.table-zy td p a {
+    margin-right: 20px
+}
+
+.page_edit .subtitle_item input[type=radio], .page_edit .option_item input[type=radio], .page_edit .subtitle_item input[type=checkbox], .page_edit .option_item input[type=checkbox] {
+    margin-left: 0;
+}
+
+.toupiao-title {
+    border-bottom: 1px solid #ddd;
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.toupiao-title .yonghuxx {
+    padding: 3px 0px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    text-align: right;
+}
+
+.toupiao-title .yonghuxx span {
+    padding: 0 10px;
+    color: #999;
+}
+
+.toupiao-input {
+    margin: 0px 0 0 22px;
+    height: 28px;
+    line-height: 28px;
+    width: 70%;
+    padding: 5px;
+}
+
+.survey_form_ui {
+    margin-top: 5px !important;
+}
+
+.option_text {
+    margin-top: 0px !important;
+}
+
+.beizhutishi {
+    margin-left: 5px;
+    color: #999;
+}
+
+.xuanxiang-input a {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    text-align: center;
+    background: #28A4C9;
+    color: #fff;;
+}
+
+.xuanxiang-a {
+    padding-left: 35px;
+}
+
+.xuanxiang-a a {
+    padding: 0 5px;
+}
+
+.adjoined-bottom {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    width: 100%;
+    background: #eee;
+    height: 18px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    font-size: 11px;
+    color: #f7f7f7;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+    height: 18px;
+    line-height: 18px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+    height: 18px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    color: #28A4C9;
+}

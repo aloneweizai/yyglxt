@@ -1,0 +1,25 @@
+/* CSS Document */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, dd, dt, dl {
+	margin: 0;
+	padding: 0;
+}
+
+
+.ny_statis{ margin-top:30px;}
+
+.sta_icon{ margin-top:30px;}
+.sta_icon_l{ line-height:80px; font-size:30px; color:#fff; text-align:center; }
+.sta_icon_r{ text-align:center; background:#fff; color:#333; line-height:30px; height:80px; overflow:hidden; }
+.sta_icon_r h3{ line-height:34px; margin-top:10px;}
+
+
+
+ .sta_icon2 .sta_icon_l{ font-size: 12px; }
+.sta_icon2 ul li{ width: 18%; margin:0 1%  }
+.sta_icon2.sta_icon_l{ font-size:12px; }
+@media (max-width:768px) {
+
+.sta_icon2 ul li{ width: 100%;}
+
+
+}

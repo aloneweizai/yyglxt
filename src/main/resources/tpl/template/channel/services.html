@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="${siteInfo.description}"/>
+		<meta name="keywords" content="${siteInfo.keywords}"/>
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link type="text/css" rel="stylesheet"  href="/css/webpage_main-480.css"/>
+		<title>客户服务-ABC财税网</title>
+
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/css/iconfont.css"> 
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"> 
+		<link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:1200px)" href="/css/webpage_main-1024.css"/>
+		<link type="text/css" rel="stylesheet" media="screen and (min-width:1201px)" href="/css/webpage_main.css"/>
+		<!--[if IE 8]>
+			<link type="text/css" rel="stylesheet"  href="/css/webpage_main-1024.css"/>
+		<![endif]-->
+		
+		
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.js" ></script>
+		
+		<script type="text/javascript" src="/js/webpage_main.js"></script>
+		<script type="text/javascript" src="/js/jquery.base64.min.js"></script>
+		<script type="text/javascript">
+			var snsUrl = "${snsUrl}";
+			var ucUrl = "${ucUrl}";
+			var picUrl= "${picUrl}";
+			var cswUrl = "${cswUrl}";
+		</script>
+		${siteInfo.statisticsCode}
+		<style>
+			.ny_login_nav2 {
+				float: left;
+				color: #fff;
+			}
+			.ny_login_nav2 img{
+				height:40px;
+				width:40px;
+				border-radius:40px;
+				margin:7px;
+				float: left;
+			}
+			.ny_login_nav2 .user_name{
+				float: left;
+			}
+			.ny_login_nav2 .user_name p{
+				line-height:10px;
+				margin-top:12px;
+			}
+			.ny_login_nav2 .user_name a{
+
+			}
+		</style>
+	</head>
+
+	<body style="background: #ececec;">
+		<!-- head -->
+		<div id="header">
+			<div class='ny_head'>
+				<div class='w_1200'>
+					<div class='ny_logo'>
+						<a href='${cswUrl}/index.html' title='网站首页'>
+							<div class='boximg'><span><img src='${cswUrl}/images/logo.png'></span></div>
+						</a>
+					</div>
+
+					<div class='ny-480-nav'>
+						<div class='ny-480-sg'>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<ul>
+							<li class='active'><a href='${cswUrl}/index.html'>首页</a></li>
+							<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+							<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+							<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+							<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+							<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+							<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+							<div class='clear'></div>
+						</ul>
+						<div class='ny-480-bg'></div>
+					</div>
+
+					<div class='fr'>
+						<div class='ny_nav'>
+							<ul>
+								<li><a href='${cswUrl}/index.html'>首页</a></li>
+								<li><a href='${cswUrl}/products/index.html'>产品</a></li>
+								<li><a href='${cswUrl}/services/index.html'>服务</a></li>
+								<li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+								<li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+								<li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+								<li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+								<div class='clear'></div>
+							</ul>
+						</div>
+						<div class="ny_login_serach">
+							<a href="${snsUrl}/search/index.html" target="_blank"><i class="iconfont">&#xe83b;</i>搜索</a>
+							<a href="javascript:void(0);" id="tiwen"><i class="iconfont">&#xe7c0;</i>提问</a>
+						</div>
+						<div id="loginheaddiv" class="ny_login_nav">
+							<a href="${ucUrl}/login">登录</a>|
+							<a href="${ucUrl}/login#zhuce">注册</a>
+						</div>
+
+						<div id="loginheaddiv_loged" class="ny_login_nav2" style="display:none;">
+							<img id="userpic_img" src="${cswUrl}/images/icon_zx_03.png">
+							<div class="user_name">
+								<p><a id="nickname_a" style="color: #fff; font-size: 12px;" href="${ucUrl}/index.html"></a></p>
+								<a id="vip_a" href="javascript:void (0)" style="color: #fcff00; font-size: 12px;"></a>
+							</div>
+							<div class="nemu-box">
+								<div class="center"><a id="level_a" href="javascript:void (0)"></a></div>
+								<ul><li name="${ucUrl}/index.html" link="${ucUrl}/userinfo/userinfolist.html" onclick="jbzl()"> <a href="javascript:void(0);"><i class="iconfont"> </i><span>基本资料</span></a></li>
+									<li name="${ucUrl}/index.html?#1_1" link="${ucUrl}/userinfo/userinfolist.html?#1_1" onclick="smrzClick()">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>实名认证</span></a>
+									</li>
+									<li name="${ucUrl}/userinfo/user_message.html" link="${ucUrl}/userinfo/user_message.html" onclick="wdxx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>我的消息</span></a>
+									</li>
+									<li name="${ucUrl}/member/member_index.html" link="${ucUrl}/member/member_index.html" onclick="hyzx();">
+										<a href="javascript:void(0);"><i class="iconfont"> </i><span>会员中心</span></a>
+									</li>
+									<li class="tuichu"><a href="${ucUrl}/logout_index.html"><i class="iconfont"> </i><span>退出登录</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='clear'></div>
+		</div>
+		<!-- head end -->
+		<!-- main -->
+		<div class="service-img">
+			<img src="/images/bgg4.jpg" alt="">
+		</div>
+		<div class="service-head w_1200">
+			<p><u>八</u>大服务政策</p>
+			<ul class="clearfix ">
+                <li class="clearfix">
+
+                    <div class="service-ul-left" style="background: #00BCD4;">
+                        <i class="iconfont">&#xe72a;</i> 
+                    </div>
+                    <div class="service-ul-right" > 
+                        <p>400-887-3133</p>
+                        <span>10 小时 X 365天电话咨询服务</span>
+					</div>
+
+                </li>
+               <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#61cdfe;">
+                        <i class="iconfont">&#xe790;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>4008873133</p>
+                        <span>企业在线服务QQ</span>
+					</div>
+
+				</li>
+				
+                <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#44caa7;">
+                        <i class="iconfont">&#xe7bd;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>0731-88992605</p>
+                        <span>受理客户各类投诉</span>
+					</div>
+
+                </li>
+                <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#FCBC5A;">
+                        <i class="iconfont">&#xe9b0;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>配套操作文档</p>
+                        <span>供用户随时下载与查阅资料</span>
+					</div>
+
+				</li>
+				  <li class="clearfix">
+
+                    <div class="service-ul-left" style="background: #278B00;">
+                        <i class="iconfont">&#xe6d0;</i> 
+                    </div>
+                    <div class="service-ul-right" > 
+                        <p>操作培训服务</p>
+                        <span>服务人员保证在3个工作日内</span>
+					</div>
+
+                </li>
+               <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#5479C3;">
+                        <i class="iconfont">&#xe6f6;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>快速服务响应</p>
+                        <span>处理响应时间为4小时</span>
+					</div>
+
+				</li>
+				
+                <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#AD79C3;">
+                        <i class="iconfont">&#xe68f;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>三包政策</p>
+                        <span>十二个月内实行“三包”</span>
+					</div>
+
+                </li>
+                <li class="clearfix">
+
+                    <div class="service-ul-left" style="background:#FF7373;">
+                        <i class="iconfont">&#xe6cc;</i> 
+                    </div>
+                    <div class="service-ul-right"> 
+                        <p>面对面技术支持</p>
+                        <span>电子邮件 远程技术 上门</span>
+					</div>
+
+                </li>
+            </ul>
+		</div>
+		<!-- <div class="service-middle w_1200 clearfix" style="background:#ececec;">
+			<div class="service-middle-left fl">
+				<img src="images/service1.jpg" alt="">
+			</div>
+			<div class="service-middle-right fl" style="background:#fff;">
+				<div class="clearfix">					
+					<div class="service-right-left fl " style="background:#fff;">	
+					<p>我的服务单</p>				
+						<img src="images/touxiang1.png" alt="">
+						<ul>
+							<li>姓名：李丽</li>
+							<li>工号：8002</li>
+							<li>已为你服务：280次</li>
+							<li><button type="button">查看服务详情</button></li>
+						</ul>
+						<p>工作时间：周一至周五 9:00-18:00</p>
+					</div>
+					<div class="service-right-right fl ">
+						<p><s>1</s>我的专属客服</p>
+						<p>财税专家专属你的绿色服务通道，您在使用软件的过程中碰到各种问题，第一时间为您处理和解决的人。一对一专属的贴心客服服务让你享受到更便捷，更专业、更优质的服务。</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="clearfix">
+					<div class="service-right-two fl" style="background:#fff;" >
+						<s>2</s>
+						<span>QQ在线</span>
+						<img src="images/service2.jpg" alt="">
+					</div>
+					<div class="service-right-three fl clearfix" style="background:#fff;">
+						<s>3</s>
+						<span>微信客服</span>
+						<img src="images/service3.jpg" alt="">
+
+						<div class="fr">
+							<p>扫一扫</p>
+							<p>微信号：abc12366</p>
+						</div>
+					</div>
+				</div>
+			
+		</div> -->
+
+		<div class="service-bottom" >
+			<div class="service-on w_1200">
+				<p>在线服务</p>
+				<ul class="clearfix">
+					<li>
+						<a href="${snsUrl}/help/knowledge/index.html" target="_blank">
+							<p><i class="iconfont" >&#xe606;</i></p>
+							<p>帮助中心</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onmousedown="sbfwxfClick_servicePage(this);" target="_blank">
+							<p><i class="iconfont " >&#xe662;</i></p>
+							<p>申报服务续费</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="wjmmClick()">
+							<p><i class="iconfont " >&#xe61e;</i></p>
+							<p>忘记申报密码</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="ghbdsjClick()">
+							<p><i class="iconfont " >&#xe601;</i></p>
+							<p>更换绑定手机</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="smrzClick()">
+							<p><i class="iconfont " >&#xe60f;</i></p>
+							<p>实名认证</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<p><i class="iconfont " >&#xe648;</i></p>
+							<p>上门服务预约</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="sqfpClick()">
+							<p><i class="iconfont ">&#xe70e;</i></p>
+							<p>索取发票</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="jfczClick()">
+							<p><i class="iconfont">&#xe710;</i></p>
+							<p>账户充值</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" onclick="wdjfClick()">
+							<p><i class="iconfont " >&#xe6de;</i></p>
+							<p>我的积分</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+				<div style="background:#fff;">
+				  <div class="service-address w_1200">
+					  <p><u>14</u>个服务中心</p>
+					<ul class="service-address-ul clearfix">
+						<li>
+							<a href="">
+								<u class="active">长沙</u>
+								<p>长沙服务中心</p>
+								<p>地址：长沙市雨花区韶山北路243号宏景名厦A座811室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>株洲</u>
+								<p>株洲服务中心</p>
+								<p>地址：株洲大道89号104室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>湘潭</u>
+								<p>湘潭服务中心</p>
+								<p>地址： 湘潭市建设北路8号白石商业广场大洋百货 1701室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>衡阳</u>
+								<p>衡阳服务中心</p>
+								<p>地址：衡阳市华新开发区博达绿岛C栋2309室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>邵阳</u>
+								<p>邵阳服务中心</p>
+								<p>地址：邵阳市双清区五一南路东风路步行街 C栋8027室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>岳阳</u>
+								<p>岳阳服务中心</p>
+								<p>地址：岳阳市楼区云梦路278号院内电子申报中心</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>常德</u>
+								<p>常德服务中心</p>
+								<p>地址：常德市武陵区武陵大道北段900号鑫源大厦A栋1104室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u style="font-size:16px;">张家界</u>
+								<p>张家界服务中心</p>
+								<p>地址：张家界市区迎宾路金华苑A区广和集团5楼</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>益阳</u>
+								<p>益阳服务中心</p>
+								<p>地址：康富南路221号"城上城"二栋二单元908室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>郴州</u>
+								<p>郴州服务中心</p>
+								<p>地址：郴州市香雪路天润天城七栋2单元1706室</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>永州</u>
+								<p>永州服务中心</p>
+								<p>地址：永州市湘永路79号市煤建公司二楼电子申报服务中心</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>怀化</u>
+								<p>怀化服务中心</p>
+								<p>地址：湖南省怀化市迎丰中路263号</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>娄底</u>
+								<p>娄底服务中心</p>
+								<p>地址：娄底市娄星区白塘路3号电子申报服务中心</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<u>湘西</u>
+								<p>湘西服务中心</p>
+								<p>地址：吉首市人民北路马坡岭派克公寓712室</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-map w_1200 clearfix">
+					<ul class="map-one">
+						<li><img src="/images/service4.jpg" alt=""></li>
+						<li>湖南省艾博克电脑系统有限公司</li>
+						<li>地址：天心区芙蓉南路二段9号（芙蓉南路与湘府路交汇处）星城荣域C栋-15楼</li>
+						<li>邮编：410004</li>
+						<li>电话：0731-88992611 <span>投诉电话：0731-88992605</span></li>
+						<li>传真：0731-88992603 <span>ABC财税网网址：www.abc12366.com</span></li>
+					</ul>
+					<ul class="map-two">
+						<li><img src="/images/szabkmap.png" alt=""></li>
+						<li>深圳市艾博克电脑系统有限公司</li>
+						<li>地址：深圳市南山区高新中区科技二路深圳软件园13栋502</li>
+						<li>邮编：518057</li>
+						<li>电话：0731-83411866 </li>
+						<li>传真：0755-83304112</li>
+					</ul>
+				</div>
+		
+		</div>
+		<!-- main end -->
+		<!-- footer  -->
+		<div class="footer">
+			<div class="w_1200">
+				<ul class="footer_nav">
+					<li>
+						<h3><a href="${cswUrl}/aboutus/fc5d52f799ba4f9fa6968c9105015d4d.html" target="_blank">关于我们</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/aboutus/62f19008a49a4008912e7ab64c75a945.html" target="_blank">联系我们</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/16241b879f4248bda857688c13ae9fd7.html" target="_blank">版权声明</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/09e1eda03bc04a92b5a891fa16d8301d.html" target="_blank">隐私政策</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/aboutus/e8ee90183ece4ffaaf1c1d3e62555feb.html" target="_blank">商务合作</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/products/index.html" target="_blank">产品</a></h3>
+						<dl>
+							<dd>
+								<a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">ABC财税专家</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">ABC电子申报</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">电子税局</a>
+							</dd>
+							<dd>
+								<a href="${cswUrl}/products/11e6ae0f2fea42b695e406299ce9f6fa.html" target="_blank">税务公众号</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${cswUrl}/services/index.html" target="_blank">服务</a></h3>
+						<dl>
+							<dd>
+								<a href="javascript:void(0);" onclick="sbfwxfClick();">申报服务续费</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="wjmmClick();">忘记申报密码</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="sqfpClick();">索取发票</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0);" onclick="jfczClick();">帐户充值</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<h3><a href="${snsUrl}/help/knowledge/index.html" target="_blank">帮助中心</a></h3>
+						<dl>
+							<dd>
+								<a href="${ucUrl}/login#zhuce" target="_blank">用户注册</a>
+							</dd>
+							<dd>
+								<a href="${ucUrl}/forgotpassword.html" target="_blank">找回密码</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/index.html" target="_blank">常见问题</a>
+							</dd>
+							<dd>
+								<a href="${snsUrl}/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b" target="_blank">新手指南</a>
+							</dd>
+						</dl>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="footer_link">
+					<h3><a href="">友情链接</a></h3>
+					<ul>
+						<#if links?? && links?size gt 0>
+							<#list links as link>
+								<li>
+									<a href="${link.domain!}" target="_blank">${link.siteName!}</a>
+								</li>
+							</#list>
+						</#if>
+
+
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="footer_code"><img src="/images/code.jpg">微信关注我们</div>
+				<div class="clear"></div>
+			</div>
+			<div class="foot w_1200">
+				<div class="fl">Copyright © 2005-2015 ABC12366 All Rights Reserved 粤ICP备08111004号-3
+					<script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=4a80c3b8-1619-4ffa-ae2e-16c54df84596&width=70&height=22&type=2" type="text/javascript" charset="utf-8"></script>
+				</div>
+				<div class="fr">
+					<div class="yuan bg_blue fl">T</div>400-887-3133</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- footer end -->
+	
+	</body>
+	<script type="text/javascript" src="/js/header.js"></script>
+	<script type="text/javascript" src="/js/services.js"></script>
+</html>

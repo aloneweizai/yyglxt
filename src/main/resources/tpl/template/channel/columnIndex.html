@@ -1,0 +1,413 @@
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="${siteInfo.description}"/>
+	<meta name="keywords" content="${siteInfo.keywords}"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link type="text/css" rel="stylesheet"  href="/css/webpage_main-480.css"/>
+    <title>ABC财税网</title>
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:1200px)" href="/css/webpage_main-1024.css"/>
+	<link type="text/css" rel="stylesheet" media="screen and (min-width:1201px)" href="/css/webpage_main.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+	 <!--[if IE 8]>
+	   <link type="text/css" rel="stylesheet"  href="/css/webpage_main-1024.css"/>
+	<![endif]-->
+    <script type="text/javascript" src="/js/webpage_main.js"></script>
+	<script type="text/javascript" src="/js/jquery.base64.min.js"></script>
+	<script type="text/javascript">
+		var snsUrl = "${snsUrl}";
+		var ucUrl = "${ucUrl}";
+		var picUrl= "${picUrl}";
+		var cswUrl = "${cswUrl}";
+	</script>
+	<script type="text/javascript" src="/js/services.js"></script>
+
+	<style>
+		.ny_login_nav2 {
+			float: left;
+			color: #fff;
+		}
+		.ny_login_nav2 img{
+			height:40px;
+			width:40px;
+			border-radius:40px;
+			margin:7px;
+			float: left;
+		}
+		.ny_login_nav2 .user_name{
+			float: left;
+		}
+		.ny_login_nav2 .user_name p{
+			line-height:10px;
+			margin-top:12px;
+		}
+		.ny_login_nav2 .user_name a{
+
+                }
+            </style>
+            ${siteInfo.statisticsCode}
+        </head>
+
+        <body style="background: #ececec;">
+        <!-- head -->
+        <div id="header">
+            <div class='ny_head'>
+                <div class='w_1200'>
+                    <div class='ny_logo'>
+                        <a href='${cswUrl}/index.html' title='网站首页'>
+                            <div class='boximg'><span><img src='${cswUrl}/images/logo.png'></span></div>
+                        </a>
+                    </div>
+
+                    <div class='ny-480-nav'>
+                        <div class='ny-480-sg'>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li class='active'><a href='${cswUrl}/index.html'>首页</a></li>
+                            <li><a href='${cswUrl}/products/index.html'>产品</a></li>
+                            <li><a href='${cswUrl}/services/index.html'>服务</a></li>
+                            <li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+                            <li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+                            <li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+                            <li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+                            <div class='clear'></div>
+                        </ul>
+                        <div class='ny-480-bg'></div>
+                    </div>
+
+                    <div class='fr'>
+                        <div class='ny_nav'>
+                            <ul>
+                                <li><a href='${cswUrl}/index.html'>首页</a></li>
+                                <li><a href='${cswUrl}/products/index.html'>产品</a></li>
+                                <li><a href='${cswUrl}/services/index.html'>服务</a></li>
+                                <li><a href='${cswUrl}/news/index.html'>资讯</a></li>
+                                <li><a href='${cswUrl}/rjxz/index.html'>下载</a></li>
+                                <li><a href='${snsUrl}/school/index.html'>学堂</a></li>
+                                <li><a href='${snsUrl}/bangbang/index.html'>帮邦</a></li>
+                                <div class='clear'></div>
+                            </ul>
+                        </div>
+                        <div class="ny_login_serach">
+                            <a href="${snsUrl}/search/index.html" target="_blank"><i class="iconfont">&#xe83b;</i>搜索</a>
+                            <a href="javascript:void(0);" id="tiwen"><i class="iconfont">&#xe7c0;</i>提问</a>
+                        </div>
+                        <div id="loginheaddiv" class="ny_login_nav">
+                            <a href="${ucUrl}/login">登录</a>|
+                            <a href="${ucUrl}/login#zhuce">注册</a>
+                        </div>
+
+                        <div id="loginheaddiv_loged" class="ny_login_nav2" style="display:none;">
+                            <img id="userpic_img" src="${cswUrl}/images/icon_zx_03.png">
+                            <div class="user_name">
+                                <p><a id="nickname_a" style="color: #fff; font-size: 12px;" href="${ucUrl}/index.html"></a></p>
+                                <a id="vip_a" href="javascript:void (0)" style="color: #fcff00; font-size: 12px;"></a>
+                            </div>
+                            <div class="nemu-box">
+                                <div class="center"><a id="level_a" href="javascript:void (0)"></a></div>
+                                <ul><li name="${ucUrl}/index.html" link="${ucUrl}/userinfo/userinfolist.html" onclick="jbzl()"> <a href="javascript:void(0);"><i class="iconfont"> </i><span>基本资料</span></a></li>
+                                    <li name="${ucUrl}/index.html?#1_1" link="${ucUrl}/userinfo/userinfolist.html?#1_1" onclick="smrzClick()">
+                                        <a href="javascript:void(0);"><i class="iconfont"> </i><span>实名认证</span></a>
+                                    </li>
+                                    <li name="${ucUrl}/userinfo/user_message.html" link="${ucUrl}/userinfo/user_message.html" onclick="wdxx();">
+                                        <a href="javascript:void(0);"><i class="iconfont"> </i><span>我的消息</span></a>
+                                    </li>
+                                    <li name="${ucUrl}/member/member_index.html" link="${ucUrl}/member/member_index.html" onclick="hyzx();">
+                                        <a href="javascript:void(0);"><i class="iconfont"> </i><span>会员中心</span></a>
+                                    </li>
+                                    <li class="tuichu"><a href="${ucUrl}/logout_index.html"><i class="iconfont"> </i><span>退出登录</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='clear'></div>
+        </div>
+
+
+        <!-- head end -->
+        <!-- main -->
+        <div class="w_1200">
+
+		<div class="zx_liebiao_left2 clearfix">
+			<div  class="clearfix zxsy-zt"  >
+				<div class="clearfix">
+					<div class="zx_home_gg">
+						<div class="zx_home_gg-lb clearfix">
+							<div class="zx-home-lb1">
+								<#if newContentList??>
+									<#list newContentList as p>
+										<#if p_index == 0>
+											<a href="${cswUrl}${p.staticLink!}" target="_blank">
+												<img src="${p.titleImg!}">
+												<p class="danhang">${p.title!}</p>
+											</a>
+										</#if>
+									</#list>
+								</#if>
+							</div>
+						</div>
+						<ul class="zx_home_gg-lb-ul clearfix"></ul>
+					</div>
+					<ul class="zx_zhuanti" style="background:#fff;" >
+
+						<#if newContentList??>
+							<#list newContentList as p>
+								<#if p_index gt 0 && p_index lt 4>
+									<li>
+										<a href="${cswUrl}${p.staticLink!}" target="_blank">
+											<img src="${p.titleImg!}">
+											<p class="danhang">${p.title!}</p>
+										</a>
+									</li>
+								</#if>
+							</#list>
+						</#if>
+
+
+                        </ul>
+                    </div>
+
+				<div class="zx-yyzt" style="background:#fff;">
+					<p>财税专题</p>
+
+
+                    <ul class="zx-yyzt-ul clearfix">
+                        <@topicLabel access_token=accessToken admin_token=userToken tagName='' ps = 4 page=1 channelName ='财税专题'>
+                        <#if contentListResponse?? && contentListResponse.dataList?? && contentListResponse.dataList?size gt 0>
+                            <#list contentListResponse.dataList as content>
+                                <li>
+                                    <a href="${cswUrl}${content.staticLink!}" target="_blank">
+                                        <img src="${content.titleImg!}">
+                                        <p class="danhang">${content.title}</p>
+                                    </a>
+                                </li>
+                            </#list>
+                        </#if>
+                    </@topicLabel>
+
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="liebiao_daohang ">
+                <li class="active">最新文章</li>
+                <#if childerColumnList??>
+                    <#list childerColumnList as column>
+                        <a href="${cswUrl}/${column.channelPath}/index_${column.channelId}_0.html" target="_blank">
+                            <li>${column.channelName}</li>
+                        </a>
+                    </#list>
+                </#if>
+            </ul>
+            <div class="zx_news6">
+                <#if newContentList??>
+                    <ul name="contentList_zxIndex" class="stipulate-ul-bottom stipulate-ul-bottom-one" >
+                        <#list newContentList as p>
+                            <#if p_index gt 3 && p_index lt 10>
+                                <li class="clearfix">
+                                <div class="dynamic-right-li">
+                                    <#if p.titleImg?? && p.titleImg != ''>
+                                        <a href="${cswUrl}${p.staticLink!}" target="_blank">
+                                            <img src="${p.titleImg}" class="fl clearfix">
+                                        </a>
+                                    </#if>
+                                    <a href="${cswUrl}${p.staticLink!}" target="_blank">
+                                        <h4>${p.title}</h4>
+                                    </a>
+                                    <p class="dynamic-right-li-hello sanhang">
+                                        <span>${p.shortTitle!}</span>
+                                    </p>
+
+
+                                    <p class="dynamic-right-li-word clearfix"><span>作者：${p.author!}<s>${(p.releaseDate?string("yyyy-MM-dd"))!}</s></span><span>
+												<#if p.contentType?? && p.contentType?length gt 0>
+
+													<#assign labels = p.contentType?split(";")>
+														<#if contentLabelList?? && contentLabelList?size gt 0>
+															<i class="iconfont">&#xe78d;</i>
+															<#assign lableList = contentLabelList>
+																<#list labels as label>
+																	<#list lableList as contentLable>
+																		<#if label == contentLable.tagId>
+																			<a href="${snsUrl}/help/pub/contentBelongTagList.html?tagId=${contentLable.tagId}&page=1" target="_blank"><u>${contentLable.tagName}</u></a>
+																		</#if>
+																	</#list>
+																</#list>
+														</#if>
+
+                                                </#if></span></p>
+                                    </span>
+                                </div>
+                            </li>
+                            </#if>
+                        </#list>
+                    </ul>
+                    <a name="nextPageButton_zxindex" style='text-align: center;line-height: 46px;font-size: 18px;color: #999;width: 100%;display: block;background:#fafafa;border-top:1px solid #eeeeee' href="javascript:void (0);" next-page-num="2">查看更多最新资讯</a>
+                </#if>
+
+                <!--
+                <div class="list_tuwen ">
+                    <span class="zx_list ">
+                        <a href="资讯2-文章.html " target="_blank "><p class="zcjd_title ">国家税务总局关于发布增值税发票系统升级版与税发布增值税发票系统</p></a>
+                        <p class="zcjd_page ">于发布增值税发票系统升级版与税发布增值税发于发布增值税发票系统升级版与税发布增值税发于发布增值税发票系统升级版与税发布增值税发于发布增值税发票系统升级版与税发布增值税发</p>
+                        <div class="detatime ">
+                            <span>湖南省国家税务局</span>
+                            <span>2017-06-06</span>
+                            <div class="wenzhang_biaoqian ">
+                                <i class="iconfont "></i>
+                                <a href=" ">增值税</a>
+                                <a href=" ">营改增</a>
+                                <a href=" ">消费税</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                -->
+
+
+            </div>
+        </div>
+
+            <ul class="zx_liebiao_right2">
+
+                <ul class="zx_liebiao_dh2" id="hotContent"><div class="list_title"><span>热门资讯</span></div><li class="max"><a href="https://www.abc12366.com//news/zcfg/0ef6385d445a4492be2184dfc3478714.html"><img src="https://www.abc12366.com/images/201801051808260502.jpg"><div class="xuhao">Top1</div> <div class="zx_right_title"> <p>湖南省国家税务局 湖南省财政厅关于农产品增值税进项税额核定扣除试点有关事项的公告</p> <span>1515147011000</span> </div></a></li><li class="max"><a href="https://www.abc12366.com//news/zcfg/8f000330bced4848b3ca0c304db9ea60.html"><img src="https://www.abc12366.com/images/201801081927550089.jpg"><div class="xuhao">Top2</div> <div class="zx_right_title"> <p>国家税务总局关于长期来华定居专家免征车辆购置税有关问题的公告</p> <span>1515410935000</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/zcjd/0183c4c5176242d79edb0230f7ab5bc1.html"><img src="https://www.abc12366.com/images/201801051527370747.jpg"><div class="xuhao">3</div> <div class="zx_right_title"> <p>关于《国家税务总局关于调整增值税纳税申报有关事项的公告》的解读</p> <span>2018-01-05</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/77b89e4646b946dcbc37b7052f8218f6.html"><img src="https://www.abc12366.com/images/201801081916010864.png"><div class="xuhao">4</div> <div class="zx_right_title"> <p>国家税务总局关于成品油消费税征收管理有关问题的公告</p> <span>2018-01-08</span> </div></a></li><li class="min"><a href="https://www.abc12366.com//news/zcfg/zcjd/6ba97cf8b48a425e8b30dfffdb60880b.html"><img src="https://www.abc12366.com/images/201801081926100879.jpg"><div class="xuhao">5</div> <div class="zx_right_title"> <p>关于《国家税务总局关于长期来华定居专家免征车辆购置税有关问题的公告》的解读</p> <span>2018-01-08</span> </div></a></li></ul>
+                <ul class="zx_liebiao_dh2" id="hotLabel"><div class="list_title"><span>热词推荐</span></div><div class="recituijian"><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=a6fffa1b-ee54-495b-9104-9cebf7d3a84a&amp;page=1" target="_blank">政策法规</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=e740cf1d359e493981b8698fd256b971&amp;page=1" target="_blank">增值税</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=3e819b68-49f5-496a-af56-909e067852a1&amp;page=1" target="_blank">营改增</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=9615a2eba0e945c7bc1231a62d942b64&amp;page=1" target="_blank">政策解读</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=018b13b5-c2f1-440d-9a9c-4692ecde805e&amp;page=1" target="_blank">企业所得税</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=47067658-252e-46da-8b52-e58e70688641&amp;page=1" target="_blank">小微企业税收优惠</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=5cdebb73268e42128462bedec0f3b300&amp;page=1" target="_blank">发票</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=c134818253ac4dcfb29f141cdcf7db83&amp;page=1" target="_blank">企业研发费用加计扣除优惠</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=476f2bed5292406e86a8bcff49f91ed7&amp;page=1" target="_blank">其他征收管理</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=7fd56500c6bf4451a51b1371e8d1037b&amp;page=1" target="_blank">会计核算</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=9e237d1c71d34635b0b95fccd8c31694&amp;page=1" target="_blank">税收优惠</a><a href="https://bb.abc12366.com/help/pub/contentBelongTagList.html?tagId=b7ccdfd0-d8cd-427f-86af-dc108b193d37&amp;page=1" target="_blank">大众创业税收优惠</a></div></ul>
+                <ul class="zx_liebiao_dh2" id="hotDiscussion"><div class="list_title" style="margin-bottom: 0;"><i class="iconfont" style="color: #FF7800; "></i><span>帮友热议</span><div class="clear"></div></div><ul class="bangyoureyi"><li><a href="https://bb.abc12366.com/topic/xiangqing/80e0e2c1384d45539974dcfaa80fd7a8" target="_blank"><i style="background: #FF3B35;">1</i><span>对小微企业增值税发票领用有些什么要求？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/aec1f95239d14b37a35d0390cd09e983" target="_blank"><i style="background: #FC7D30;">2</i><span>2017所得税政策有什么变化？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/62fec1caeafe4e94a251a4b2d6cf4f7f" target="_blank"><i style="background: #FCBF30;">3</i><span>什么是增值税？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/7db0cf002748466bbf908a0e16442289" target="_blank"><i>4</i><span>母公司把设备租给子公司收租赁费，母公司可用增值税发票开吗，还是到税务局代开。</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/aae79fc40777441d8ffb248efecb3556" target="_blank"><i>5</i><span>南非是如何从发达国家退化为发展中国家的？</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/c8e2cdda7def47b7abae493f48fa5fca" target="_blank"><i>6</i><span>增值税免税政策有哪些</span></a></li><li><a href="https://bb.abc12366.com/topic/xiangqing/72ef285c8e1042258e42b09f013b2647" target="_blank"><i>7</i><span>一般纳税人</span></a></li></ul></ul>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!-- main end -->
+
+
+        <!-- footer  -->
+        <div class="footer">
+            <div class="w_1200">
+                <ul class="footer_nav">
+                    <li>
+                        <h3><a href="${cswUrl}/aboutus/fc5d52f799ba4f9fa6968c9105015d4d.html" target="_blank">关于我们</a></h3>
+                        <dl>
+                            <dd>
+                                <a href="${cswUrl}/aboutus/62f19008a49a4008912e7ab64c75a945.html" target="_blank">联系我们</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/aboutus/16241b879f4248bda857688c13ae9fd7.html" target="_blank">版权声明</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/aboutus/09e1eda03bc04a92b5a891fa16d8301d.html" target="_blank">隐私政策</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/aboutus/e8ee90183ece4ffaaf1c1d3e62555feb.html" target="_blank">商务合作</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h3><a href="${cswUrl}/products/index.html" target="_blank">产品</a></h3>
+                        <dl>
+                            <dd>
+                                <a href="${cswUrl}/products/9e4c82e39ccc443f8edc0acf89ccf365.html" target="_blank">ABC财税专家</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/products/614d7ccc8c72496b9000392f02af5a7a.html" target="_blank">ABC电子申报</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/products/9c92ea303a994ef1accbb294d14e3bf5.html" target="_blank">电子税局</a>
+                            </dd>
+                            <dd>
+                                <a href="${cswUrl}/products/11e6ae0f2fea42b695e406299ce9f6fa.html" target="_blank">税务公众号</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h3><a href="${cswUrl}/services/index.html" target="_blank">服务</a></h3>
+                        <dl>
+                            <dd>
+                                <a href="javascript:void(0);" onclick="sbfwxfClick();">申报服务续费</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:void(0);" onclick="wjmmClick();">忘记申报密码</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:void(0);" onclick="sqfpClick();">索取发票</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:void(0);" onclick="jfczClick();">帐户充值</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h3><a href="${snsUrl}/help/knowledge/index.html" target="_blank">帮助中心</a></h3>
+                        <dl>
+                            <dd>
+                                <a href="${ucUrl}/login#zhuce" target="_blank">用户注册</a>
+                            </dd>
+                            <dd>
+                                <a href="${ucUrl}/forgotpassword.html" target="_blank">找回密码</a>
+                            </dd>
+                            <dd>
+                                <a href="${snsUrl}/help/knowledge/index.html" target="_blank">常见问题</a>
+                            </dd>
+                            <dd>
+                                <a href="${snsUrl}/help/knowledge/detail.html?id=eb0315659c6a438ba7568251ea9b913b" target="_blank">新手指南</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="footer_link">
+                    <h3><a href="">友情链接</a></h3>
+                    <ul>
+                        <#if links?? && links?size gt 0>
+                            <#list links as link>
+                                <li>
+                                    <a href="${link.domain!}" target="_blank">${link.siteName!}</a>
+                                </li>
+                            </#list>
+                        </#if>
+
+
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="footer_code"><img src="/images/code.jpg">微信关注我们</div>
+                <div class="clear"></div>
+            </div>
+            <div class="foot w_1200">
+                <div class="fl">Copyright © 2005-2015 ABC12366 All Rights Reserved 粤ICP备08111004号-3
+                    <script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=4a80c3b8-1619-4ffa-ae2e-16c54df84596&width=70&height=22&type=2" type="text/javascript" charset="utf-8"></script>
+                </div>
+                <div class="fr">
+                    <div class="yuan bg_blue fl">T</div>400-887-3133</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- footer end -->
+        </body>
+
+        <script type="text/javascript" src="/js/header.js"></script>
+        <script type="text/javascript" src="/js/right.js"></script>
+        <script type="text/javascript" src="/js/zx_index.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var liLen = $(".liebiao_daohang").find("li").length;
+                $(".liebiao_daohang li").css("width",parseInt(100/liLen)+"%");
+
+            });
+        </script>
+
+        </html>

@@ -1,0 +1,74 @@
+/*讲师管理弹窗*/
+.teacher-popup{
+    position:absolute;
+    top:2%;
+    left:15%;
+    border:1px solid #ccc;
+    background-color:#fff;
+    width: 1000px;
+}
+/*.teacher-popup table{*/
+    /*width: 100%;*/
+/*}*/
+/*.teacher-popup table  tr{*/
+    /*display:block;*/
+    /*padding:30px 10px;*/
+/*}*/
+/*.teacher-popup table thead th{*/
+    /*width: 100%;*/
+    /*display:block;*/
+    /*background:#666;*/
+    /*padding:10px 45px;*/
+    /*font-size:18px;*/
+    /*font-weight:bold;*/
+    /*color:#fff;*/
+/*}*/
+/*.teacher-popup table thead th span{*/
+    /*float:right;*/
+/*}*/
+/*.teacher-popup table thead tr{*/
+    /*padding: 0;*/
+/*}*/
+/*.teacher-popup table tbody td{*/
+    /*text-align: center;*/
+    /*display:inline-block;*/
+    /*width:49%;*/
+/*}*/
+/*.teacher-popup table tbody input {*/
+    /*width: 49%;*/
+/*}*/
+/*.teacher-popup table tbody textarea{*/
+    /*display:inline-block;*/
+    /*width:151%;*/
+/*}*/
+/*.teacher-popup table tbody tr:last-child  td:first-child{*/
+    /*text-align: right;*/
+    /*width: 16%;*/
+/*}*/
+/*.teacher-popup table tfoot td{*/
+    /*display:inline-block;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+/*}*/
+/*.teacher-popup table tfoot td button{*/
+    /*width:150px;*/
+/*}*/
+/*遮罩层*/
+.bg{
+    display:none;
+    height: 100%;
+    width: 100%;
+    background:#000;
+    opacity:0.5;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+}
+/*讲师管理*/
+.teacher-popup{
+    display:none;
+}
+.teacher-popup span.teacher-close{
+    cursor:pointer;
+}
